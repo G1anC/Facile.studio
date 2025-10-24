@@ -191,7 +191,7 @@
                 <Icon name="mdi:github" size="1.5em" />
               </a>
 
-              <a href="https://linkedin.com/in/noah-steiniger" target="_blank"
+              <a href="https://www.linkedin.com/in/noah-steiniger-a2348b337/" target="_blank"
                 class="social-card text-[#87AFB1] p-3 rounded-full transition-all duration-300 flex items-center justify-center bg-[#87AFB1]/10"
                 aria-label="LinkedIn Profile">
                 <Icon name="mdi:linkedin" size="1.5em" />
