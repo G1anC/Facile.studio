@@ -18,9 +18,9 @@
       </section>
 
       <section class="max-w-6xl mx-auto mb-20">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex justify-center">
 
-          <div class="contact-card group cursor-pointer" @click="openEmail">
+          <div class="contact-card group cursor-pointer max-w-md" @click="openEmail">
             <div class="contact-card-inner">
               <div class="flex flex-col items-center text-center">
                 <div class="icon-container mb-6">
@@ -34,44 +34,6 @@
                 <div class="mt-4 flex items-center text-sm text-gray-200">
                   <Icon name="mdi:clock-outline" class="mr-2" />
                   {{ t('contact.quick_contact.response_time') }}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-card group cursor-pointer" @click="openLinkedIn">
-            <div class="contact-card-inner">
-              <div class="flex flex-col items-center text-center">
-                <div class="icon-container mb-6">
-                  <Icon name="mdi:linkedin" size="3em" class="text-white" />
-                </div>
-                <h3 class="text-2xl font-bold mb-3 font-gambarino text-white">{{ t('contact.methods.linkedin.title') }}</h3>
-                <p class="text-gray-200 mb-4">{{ t('contact.methods.linkedin.description') }}</p>
-                <div class="linkedin-handle">
-                  <span class="text-white font-medium">@thevyann</span>
-                </div>
-                <div class="mt-4 flex items-center text-sm text-gray-200">
-                  <Icon name="mdi:account-network" class="mr-2" />
-                  {{ t('contact.methods.linkedin.description') }}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-card group cursor-pointer" @click="openGitHub">
-            <div class="contact-card-inner">
-              <div class="flex flex-col items-center text-center">
-                <div class="icon-container mb-6">
-                  <Icon name="mdi:github" size="3em" class="text-white" />
-                </div>
-                <h3 class="text-2xl font-bold mb-3 font-gambarino text-white">{{ t('contact.methods.github.title') }}</h3>
-                <p class="text-gray-200 mb-4">{{ t('contact.methods.github.description') }}</p>
-                <div class="github-handle">
-                  <span class="text-white font-medium">@saravenpi</span>
-                </div>
-                <div class="mt-4 flex items-center text-sm text-gray-200">
-                  <Icon name="mdi:code-braces" class="mr-2" />
-                  {{ t('contact.methods.github.description') }}
                 </div>
               </div>
             </div>
@@ -206,14 +168,6 @@ function toggleFaq(index) {
 
 function openEmail() {
   window.location.href = 'mailto:contact@facile.studio?subject=New Project Inquiry'
-}
-
-function openLinkedIn() {
-  window.open('https://linkedin.com/in/thevyann', '_blank')
-}
-
-function openGitHub() {
-  window.open('https://github.com/saravenpi', '_blank')
 }
 
 function openQuickEmail() {
