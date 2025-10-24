@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "portfolio": "Portfolio",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Facile.",
+    "subtitle": "Créer",
+    "typewriter": {
+      "impactful": "des sites web fiables",
+      "modern": "des applications robustes",
+      "scalable": "des API performantes",
+      "innovative": "des solutions pratiques",
+      "beautiful": "du code maintenable"
+    },
+    "tagline": "Où l'innovation rencontre la créativité dans le monde numérique",
+    "cta": {
+      "view_work": "Voir Mon Travail",
+      "start_project": "Démarrer un Projet"
+    },
+    "stats": {
+      "projects": "Projets Open Source",
+      "years": "Années d'Expérience",
+      "response_time": "Temps de Réponse"
+    }
+  },
+  "about": {
+    "title": "À propos de Facile",
+    "subtitle": "Où le design exceptionnel rencontre l'excellence technique",
+    "mission": {
+      "title": "Notre Mission",
+      "text1": "Nous sommes une équipe dédiée spécialisée dans le design, le branding et le développement web. Nous créons des sites web fonctionnels et professionnels avec un accent fort sur le design UI/UX qui captive et convertit.",
+      "text2": "Notre approche combine un design visuel époustouflant avec une implémentation technique robuste. De l'identité de marque aux interfaces pixel-perfect, nous créons des expériences numériques qui sont non seulement superbes mais performantes.",
+      "text3": "Nous sommes fiers de notre engagement envers l'excellence du design, l'attention aux détails et la création d'expériences utilisateur significatives. Que vous construisiez une marque de zéro ou ayez besoin d'un site web qui se démarque, nous apportons créativité et professionnalisme à chaque projet."
+    },
+    "what_sets_apart": {
+      "title": "Ce qui nous distingue",
+      "personalized": "Approche Design-First",
+      "ecological": "Développement Écologique",
+      "clean_code": "Code Beau & Propre",
+      "communication": "Processus Collaboratif"
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Solutions complètes de design et développement",
+      "ai": {
+        "title": "Design & Branding",
+        "description": "Créez une identité de marque convaincante avec des logos personnalisés, des palettes de couleurs, de la typographie et des directives de marque complètes qui rendent votre entreprise mémorable.",
+        "features": {
+          "ml": "Logo & Identité Visuelle",
+          "nlp": "Directives de Marque",
+          "analytics": "Matériel Marketing"
+        }
+      },
+      "web": {
+        "title": "Design & Développement UI/UX",
+        "description": "Concevez et construisez des sites web époustouflants centrés sur l'utilisateur qui combinent une esthétique magnifique avec une fonctionnalité exceptionnelle et des expériences utilisateur fluides.",
+        "features": {
+          "responsive": "Design Pixel-Perfect",
+          "seo": "UX Centrée Utilisateur",
+          "performance": "Responsive & Rapide"
+        }
+      },
+      "mobile": {
+        "title": "Applications Web",
+        "description": "Développez des applications web sophistiquées avec des interfaces intuitives, des interactions fluides et des fonctionnalités puissantes que les utilisateurs adorent utiliser.",
+        "features": {
+          "cross_platform": "Frameworks Modernes",
+          "native": "Animations Fluides",
+          "deployment": "Prêt pour Production"
+        }
+      }
+    },
+    "team": {
+      "title": "Notre Équipe",
+      "subtitle": "Les esprits créatifs derrière Facile",
+      "yann": {
+        "name": "Yann Thévenin",
+        "role": "Développeur Principal & Co-Fondateur",
+        "description": "Développeur fullstack avec une formation en IA, passionné par la création d'expériences numériques exceptionnelles avec des technologies modernes, une architecture de code propre et une approche écologique du développement."
+      },
+      "noah": {
+        "name": "Noah Steiniger",
+        "role": "Designer Graphique & Développeur Web",
+        "description": "Designer graphique créatif et développeur web, spécialisé dans la création de designs beaux et centrés sur l'utilisateur, et dans leur mise en vie avec des technologies web modernes."
+      }
+    },
+    "technologies": {
+      "title": "Technologies que nous utilisons",
+      "subtitle": "Outils modernes pour des solutions modernes"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Découvrez mes projets récents",
+    "cta": {
+      "title": "Prêt à créer quelque chose d'incroyable ?",
+      "subtitle": "Transformons vos idées en réalité numérique",
+      "start_project": "Démarrer un Projet",
+      "view_more": "Voir Plus de Projets"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Créons quelque chose d'extraordinaire ensemble",
+    "methods": {
+      "email": {
+        "title": "E-mail",
+        "description": "Envoyez-moi un e-mail pour discuter de votre projet"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Connectons-nous professionnellement"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Consultez mon code et mes contributions"
+      }
+    },
+    "quick_contact": {
+      "title": "Contact Rapide",
+      "subtitle": "Besoin d'une réponse rapide ? Utilisez l'une de ces options",
+      "email_button": "Envoyer un E-mail Rapide",
+      "schedule_button": "Planifier un Appel",
+      "response_time": "Temps de réponse habituel : 24h"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "q1": {
+        "question": "Quels types de projets acceptez-vous ?",
+        "answer": "Je travaille sur une variété de projets, des sites web simples aux applications web complexes, en passant par l'intégration d'IA et les applications mobiles. Si vous avez un projet numérique en tête, contactez-moi !"
+      },
+      "q2": {
+        "question": "Combien de temps prend généralement un projet ?",
+        "answer": "Cela dépend de la complexité du projet. Un site web simple peut prendre 2-4 semaines, tandis qu'une application web complexe peut prendre 2-6 mois. Je fournis toujours un calendrier détaillé après notre consultation initiale."
+      },
+      "q3": {
+        "question": "Proposez-vous une maintenance après le lancement ?",
+        "answer": "Oui, je propose des services de maintenance et de support continus pour tous mes projets. Cela inclut les mises à jour, les corrections de bugs et les améliorations de fonctionnalités."
+      },
+      "q4": {
+        "question": "Travaillez-vous avec des clients internationaux ?",
+        "answer": "Absolument ! Je travaille avec des clients du monde entier. Je suis disponible pour des appels vidéo et une communication par e-mail dans plusieurs fuseaux horaires."
+      }
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Facile - Créer des solutions web impactantes",
+      "description": "Facile est une agence de développement web qui crée des solutions web impactantes pour les entreprises et les startups."
+    },
+    "about": {
+      "title": "Facile - À propos"
+    },
+    "portfolio": {
+      "title": "Facile - Portfolio"
+    },
+    "contact": {
+      "title": "Facile - Contact"
+    }
+  }
+}
+

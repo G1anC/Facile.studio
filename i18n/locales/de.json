@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Facile.",
+    "subtitle": "Entwickeln von",
+    "typewriter": {
+      "impactful": "zuverlässige Websites",
+      "modern": "robuste Anwendungen",
+      "scalable": "performante APIs",
+      "innovative": "praktische Lösungen",
+      "beautiful": "wartbaren Code"
+    },
+    "tagline": "Wo Innovation auf Kreativität im digitalen Bereich trifft",
+    "cta": {
+      "view_work": "Meine Arbeit ansehen",
+      "start_project": "Projekt starten"
+    },
+    "stats": {
+      "projects": "Open Source Projekte",
+      "years": "Jahre im Geschäft",
+      "response_time": "Antwortzeit"
+    }
+  },
+  "about": {
+    "title": "Über Facile",
+    "subtitle": "Wo außergewöhnliches Design auf technische Exzellenz trifft",
+    "mission": {
+      "title": "Unsere Mission",
+      "text1": "Wir sind ein engagiertes Team, das sich auf Design, Branding und Webentwicklung spezialisiert hat. Wir erstellen funktionale, professionelle Websites mit starkem Fokus auf UI/UX-Design, das fesselt und konvertiert.",
+      "text2": "Unser Ansatz kombiniert beeindruckendes visuelles Design mit robuster technischer Umsetzung. Von Markenidentität bis zu pixelgenauen Interfaces schaffen wir digitale Erlebnisse, die nicht nur großartig aussehen, sondern auch einwandfrei funktionieren.",
+      "text3": "Wir sind stolz auf unser Engagement für Design-Exzellenz, Liebe zum Detail und die Schaffung bedeutungsvoller Benutzererfahrungen. Ob Sie eine Marke von Grund auf aufbauen oder eine Website benötigen, die heraussticht, wir bringen Kreativität und Professionalität in jedes Projekt."
+    },
+    "what_sets_apart": {
+      "title": "Was uns auszeichnet",
+      "personalized": "Design-First Ansatz",
+      "ecological": "Ökologische Entwicklung",
+      "clean_code": "Schöner & Sauberer Code",
+      "communication": "Kollaborativer Prozess"
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende Design- und Entwicklungslösungen",
+      "ai": {
+        "title": "Design & Branding",
+        "description": "Erstellen Sie eine überzeugende Markenidentität mit individuellen Logos, Farbpaletten, Typografie und umfassenden Markenrichtlinien, die Ihr Unternehmen unvergesslich machen.",
+        "features": {
+          "ml": "Logo & Visuelle Identität",
+          "nlp": "Markenrichtlinien",
+          "analytics": "Marketingmaterialien"
+        }
+      },
+      "web": {
+        "title": "UI/UX Design & Entwicklung",
+        "description": "Entwerfen und entwickeln Sie beeindruckende, benutzerzentrierte Websites, die wunderschöne Ästhetik mit außergewöhnlicher Funktionalität und nahtlosen Benutzererfahrungen kombinieren.",
+        "features": {
+          "responsive": "Pixelgenaues Design",
+          "seo": "Benutzerzentrierte UX",
+          "performance": "Responsive & Schnell"
+        }
+      },
+      "mobile": {
+        "title": "Webanwendungen",
+        "description": "Entwickeln Sie anspruchsvolle Webanwendungen mit intuitiven Interfaces, flüssigen Interaktionen und leistungsstarken Funktionen, die Benutzer lieben.",
+        "features": {
+          "cross_platform": "Moderne Frameworks",
+          "native": "Flüssige Animationen",
+          "deployment": "Produktionsbereit"
+        }
+      }
+    },
+    "team": {
+      "title": "Unser Team",
+      "subtitle": "Die kreativen Köpfe hinter Facile",
+      "yann": {
+        "name": "Yann Thévenin",
+        "role": "Lead-Entwickler & Mitgründer",
+        "description": "Fullstack-Entwickler mit KI-Hintergrund, leidenschaftlich daran interessiert, außergewöhnliche digitale Erlebnisse mit modernen Technologien, sauberer Code-Architektur und einem ökologischen Entwicklungsansatz zu schaffen."
+      },
+      "noah": {
+        "name": "Noah Steiniger",
+        "role": "Grafikdesigner & Webentwickler",
+        "description": "Kreativer Grafikdesigner und Webentwickler, spezialisiert auf die Gestaltung schöner, benutzerzentrierter Designs und deren Umsetzung mit modernen Webtechnologien."
+      }
+    },
+    "technologies": {
+      "title": "Technologien, die wir verwenden",
+      "subtitle": "Moderne Werkzeuge für moderne Lösungen"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Entdecken Sie meine neuesten Projekte",
+    "cta": {
+      "title": "Bereit, etwas Erstaunliches zu schaffen?",
+      "subtitle": "Lassen Sie uns Ihre Ideen in digitale Realität verwandeln",
+      "start_project": "Projekt starten",
+      "view_more": "Weitere Projekte ansehen"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen",
+    "methods": {
+      "email": {
+        "title": "E-Mail",
+        "description": "Senden Sie mir eine E-Mail, um Ihr Projekt zu besprechen"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Lassen Sie uns professionell verbinden"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Schauen Sie sich meinen Code und meine Beiträge an"
+      }
+    },
+    "quick_contact": {
+      "title": "Schnellkontakt",
+      "subtitle": "Benötigen Sie eine schnelle Antwort? Verwenden Sie eine dieser Optionen",
+      "email_button": "Schnelle E-Mail senden",
+      "schedule_button": "Anruf planen",
+      "response_time": "Typische Antwortzeit: 24 Std."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Welche Arten von Projekten übernehmen Sie?",
+        "answer": "Ich arbeite an verschiedenen Projekten, von einfachen Websites bis hin zu komplexen Webanwendungen, KI-Integration und mobilen Apps. Wenn Sie ein digitales Projekt im Kopf haben, lassen Sie uns sprechen!"
+      },
+      "q2": {
+        "question": "Wie lange dauert ein typisches Projekt?",
+        "answer": "Es hängt von der Projektkomplexität ab. Eine einfache Website könnte 2-4 Wochen dauern, während eine komplexe Webanwendung 2-6 Monate dauern könnte. Ich gebe immer einen detaillierten Zeitplan nach unserem ersten Beratungsgespräch."
+      },
+      "q3": {
+        "question": "Bieten Sie laufende Wartung an?",
+        "answer": "Ja, ich biete laufende Wartungs- und Support-Services für alle meine Projekte an. Dies umfasst Updates, Fehlerbehebungen und Feature-Verbesserungen."
+      },
+      "q4": {
+        "question": "Arbeiten Sie mit internationalen Kunden?",
+        "answer": "Absolut! Ich arbeite mit Kunden aus der ganzen Welt. Ich bin für Videoanrufe und E-Mail-Kommunikation über mehrere Zeitzonen hinweg verfügbar."
+      }
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Facile - Wirkungsvolle Web-Lösungen schaffen",
+      "description": "Facile ist eine Webentwicklungsagentur, die wirkungsvolle Web-Lösungen für Unternehmen und Startups schafft."
+    },
+    "about": {
+      "title": "Facile - Über uns"
+    },
+    "portfolio": {
+      "title": "Facile - Portfolio"
+    },
+    "contact": {
+      "title": "Facile - Kontakt"
+    }
+  }
+}

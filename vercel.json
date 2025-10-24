@@ -1,0 +1,8 @@
+{
+  "installCommand": "bun install",
+  "buildCommand": "bun run build",
+  "devCommand": "bun run dev",
+  "env": {
+    "NODE_VERSION": "20.x"
+  }
+}

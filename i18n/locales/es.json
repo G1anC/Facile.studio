@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Facile.",
+    "subtitle": "Crear",
+    "typewriter": {
+      "impactful": "sitios web confiables",
+      "modern": "aplicaciones robustas",
+      "scalable": "APIs de alto rendimiento",
+      "innovative": "soluciones prácticas",
+      "beautiful": "código mantenible"
+    },
+    "tagline": "Donde la innovación se encuentra con la creatividad en el mundo digital",
+    "cta": {
+      "view_work": "Ver Mi Trabajo",
+      "start_project": "Iniciar un Proyecto"
+    },
+    "stats": {
+      "projects": "Proyectos Open Source",
+      "years": "Años de Experiencia",
+      "response_time": "Tiempo de Respuesta"
+    }
+  },
+  "about": {
+    "title": "Acerca de Facile",
+    "subtitle": "Donde el diseño excepcional se encuentra con la excelencia técnica",
+    "mission": {
+      "title": "Nuestra Misión",
+      "text1": "Somos un equipo dedicado especializado en diseño, branding y desarrollo web. Creamos sitios web funcionales y profesionales con un fuerte énfasis en el diseño UI/UX que cautiva y convierte.",
+      "text2": "Nuestro enfoque combina un diseño visual impresionante con una implementación técnica robusta. Desde la identidad de marca hasta interfaces pixel-perfect, creamos experiencias digitales que no solo se ven increíbles sino que funcionan perfectamente.",
+      "text3": "Nos enorgullecemos de nuestro compromiso con la excelencia del diseño, la atención al detalle y la creación de experiencias de usuario significativas. Ya sea que estés construyendo una marca desde cero o necesites un sitio web que destaque, aportamos creatividad y profesionalismo a cada proyecto."
+    },
+    "what_sets_apart": {
+      "title": "Lo que nos distingue",
+      "personalized": "Enfoque Design-First",
+      "ecological": "Desarrollo Ecológico",
+      "clean_code": "Código Bello y Limpio",
+      "communication": "Proceso Colaborativo"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones completas de diseño y desarrollo",
+      "ai": {
+        "title": "Diseño y Branding",
+        "description": "Crea una identidad de marca convincente con logotipos personalizados, paletas de colores, tipografía y directrices de marca completas que hacen que tu negocio sea memorable.",
+        "features": {
+          "ml": "Logo e Identidad Visual",
+          "nlp": "Directrices de Marca",
+          "analytics": "Material de Marketing"
+        }
+      },
+      "web": {
+        "title": "Diseño y Desarrollo UI/UX",
+        "description": "Diseña y construye sitios web impresionantes centrados en el usuario que combinan una estética hermosa con una funcionalidad excepcional y experiencias de usuario fluidas.",
+        "features": {
+          "responsive": "Diseño Pixel-Perfect",
+          "seo": "UX Centrada en Usuario",
+          "performance": "Responsive y Rápido"
+        }
+      },
+      "mobile": {
+        "title": "Aplicaciones Web",
+        "description": "Desarrolla aplicaciones web sofisticadas con interfaces intuitivas, interacciones fluidas y funcionalidades potentes que los usuarios aman usar.",
+        "features": {
+          "cross_platform": "Frameworks Modernos",
+          "native": "Animaciones Fluidas",
+          "deployment": "Listo para Producción"
+        }
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "subtitle": "Las mentes creativas detrás de Facile",
+      "yann": {
+        "name": "Yann Thévenin",
+        "role": "Desarrollador Principal y Cofundador",
+        "description": "Desarrollador fullstack con formación en IA, apasionado por crear experiencias digitales excepcionales con tecnologías modernas, arquitectura de código limpio y un enfoque ecológico del desarrollo."
+      },
+      "noah": {
+        "name": "Noah Steiniger",
+        "role": "Diseñador Gráfico y Desarrollador Web",
+        "description": "Diseñador gráfico creativo y desarrollador web, especializado en crear diseños hermosos y centrados en el usuario, y darles vida con tecnologías web modernas."
+      }
+    },
+    "technologies": {
+      "title": "Tecnologías que utilizamos",
+      "subtitle": "Herramientas modernas para soluciones modernas"
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Descubre mis proyectos recientes",
+    "cta": {
+      "title": "¿Listo para crear algo increíble?",
+      "subtitle": "Transformemos tus ideas en realidad digital",
+      "start_project": "Iniciar un Proyecto",
+      "view_more": "Ver Más Proyectos"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Creemos algo extraordinario juntos",
+    "methods": {
+      "email": {
+        "title": "Email",
+        "description": "Envíame un email para discutir tu proyecto"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Conectemos profesionalmente"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Consulta mi código y contribuciones"
+      }
+    },
+    "quick_contact": {
+      "title": "Contacto Rápido",
+      "subtitle": "¿Necesitas una respuesta rápida? Usa una de estas opciones",
+      "email_button": "Enviar Email Rápido",
+      "schedule_button": "Programar una Llamada",
+      "response_time": "Tiempo de respuesta habitual: 24h"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Qué tipos de proyectos aceptas?",
+        "answer": "Trabajo en una variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas, pasando por integración de IA y aplicaciones móviles. Si tienes un proyecto digital en mente, ¡contáctame!"
+      },
+      "q2": {
+        "question": "¿Cuánto tiempo toma generalmente un proyecto?",
+        "answer": "Depende de la complejidad del proyecto. Un sitio web simple puede tomar 2-4 semanas, mientras que una aplicación web compleja puede tomar 2-6 meses. Siempre proporciono un cronograma detallado después de nuestra consulta inicial."
+      },
+      "q3": {
+        "question": "¿Ofreces mantenimiento después del lanzamiento?",
+        "answer": "Sí, ofrezco servicios de mantenimiento y soporte continuo para todos mis proyectos. Esto incluye actualizaciones, corrección de errores y mejoras de funcionalidades."
+      },
+      "q4": {
+        "question": "¿Trabajas con clientes internacionales?",
+        "answer": "¡Absolutamente! Trabajo con clientes de todo el mundo. Estoy disponible para videollamadas y comunicación por email en múltiples zonas horarias."
+      }
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Facile - Crear soluciones web impactantes",
+      "description": "Facile es una agencia de desarrollo web que crea soluciones web impactantes para empresas y startups."
+    },
+    "about": {
+      "title": "Facile - Acerca de"
+    },
+    "portfolio": {
+      "title": "Facile - Portafolio"
+    },
+    "contact": {
+      "title": "Facile - Contacto"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Facile.",
+    "subtitle": "Creating",
+    "typewriter": {
+      "impactful": "reliable websites",
+      "modern": "robust applications",
+      "scalable": "performant APIs",
+      "innovative": "practical solutions",
+      "beautiful": "maintainable code"
+    },
+    "tagline": "Where innovation meets creativity in the digital realm",
+    "cta": {
+      "view_work": "View My Work",
+      "start_project": "Start a Project"
+    },
+    "stats": {
+      "projects": "Open Source Projects",
+      "years": "Years in Business",
+      "response_time": "Response Time"
+    }
+  },
+  "about": {
+    "title": "About Facile",
+    "subtitle": "Where exceptional design meets technical excellence",
+    "mission": {
+      "title": "Our Mission",
+      "text1": "We are a dedicated team specializing in design, branding, and web development. We create functional, professional websites with a strong emphasis on UI/UX design that captivates and converts.",
+      "text2": "Our approach combines stunning visual design with robust technical implementation. From brand identity to pixel-perfect interfaces, we craft digital experiences that not only look amazing but perform flawlessly.",
+      "text3": "We pride ourselves on our commitment to design excellence, attention to detail, and creating meaningful user experiences. Whether you're building a brand from scratch or need a website that stands out, we bring creativity and professionalism to every project."
+    },
+    "what_sets_apart": {
+      "title": "What Sets Us Apart",
+      "personalized": "Design-First Approach",
+      "ecological": "Ecological Development",
+      "clean_code": "Beautiful & Clean Code",
+      "communication": "Collaborative Process"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive design and development solutions",
+      "ai": {
+        "title": "Design & Branding",
+        "description": "Create a compelling brand identity with custom logos, color palettes, typography, and comprehensive brand guidelines that make your business memorable.",
+        "features": {
+          "ml": "Logo & Visual Identity",
+          "nlp": "Brand Guidelines",
+          "analytics": "Marketing Materials"
+        }
+      },
+      "web": {
+        "title": "UI/UX Design & Development",
+        "description": "Design and build stunning, user-centered websites that combine beautiful aesthetics with exceptional functionality and seamless user experiences.",
+        "features": {
+          "responsive": "Pixel-Perfect Design",
+          "seo": "User-Centered UX",
+          "performance": "Responsive & Fast"
+        }
+      },
+      "mobile": {
+        "title": "Web Applications",
+        "description": "Develop sophisticated web applications with intuitive interfaces, smooth interactions, and powerful functionality that users love to use.",
+        "features": {
+          "cross_platform": "Modern Frameworks",
+          "native": "Smooth Animations",
+          "deployment": "Production Ready"
+        }
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "The creative minds behind Facile",
+      "yann": {
+        "name": "Yann Thévenin",
+        "role": "Lead Developer & Co-Founder",
+        "description": "Fullstack developer with an AI background, passionate about creating exceptional digital experiences with modern technologies, clean code architecture, and an ecological approach to development."
+      },
+      "noah": {
+        "name": "Noah Steiniger",
+        "role": "Graphic Designer & Web Developer",
+        "description": "Creative graphic designer and web developer, specializing in crafting beautiful, user-centric designs and bringing them to life with modern web technologies."
+      }
+    },
+    "technologies": {
+      "title": "Technologies We Use",
+      "subtitle": "Modern tools for modern solutions"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Discover my recent projects",
+    "cta": {
+      "title": "Ready to create something amazing?",
+      "subtitle": "Let's turn your ideas into digital reality",
+      "start_project": "Start a Project",
+      "view_more": "View More Projects"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's create something extraordinary together",
+    "methods": {
+      "email": {
+        "title": "Email",
+        "description": "Send me an email to discuss your project"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Let's connect professionally"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Check out my code and contributions"
+      }
+    },
+    "quick_contact": {
+      "title": "Quick Contact",
+      "subtitle": "Need a quick response? Use one of these options",
+      "email_button": "Send Quick Email",
+      "schedule_button": "Schedule Call",
+      "response_time": "Typical response time: 24h"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What types of projects do you take on?",
+        "answer": "I work on a variety of projects, from simple websites to complex web applications, AI integration, and mobile apps. If you have a digital project in mind, let's talk!"
+      },
+      "q2": {
+        "question": "How long does a typical project take?",
+        "answer": "It depends on the project complexity. A simple website might take 2-4 weeks, while a complex web application could take 2-6 months. I always provide a detailed timeline after our initial consultation."
+      },
+      "q3": {
+        "question": "Do you provide ongoing maintenance?",
+        "answer": "Yes, I offer ongoing maintenance and support services for all my projects. This includes updates, bug fixes, and feature enhancements."
+      },
+      "q4": {
+        "question": "Do you work with international clients?",
+        "answer": "Absolutely! I work with clients from around the world. I'm available for video calls and email communication across multiple time zones."
+      }
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "Facile - Crafting impactful web solutions",
+      "description": "Facile is a web development agency that crafts impactful web solutions for businesses and startups."
+    },
+    "about": {
+      "title": "Facile - About"
+    },
+    "portfolio": {
+      "title": "Facile - Portfolio"
+    },
+    "contact": {
+      "title": "Facile - Contact"
+    }
+  }
+}
+

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('~/assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('~/assets/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('~/assets/fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('~/assets/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('~/assets/fonts/Satoshi-Black.woff2') format('woff2'),
+    url('~/assets/fonts/Satoshi-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('~/assets/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('~/assets/fonts/Satoshi-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('~/assets/fonts/Satoshi-Italic.woff2') format('woff2'),
+    url('~/assets/fonts/Satoshi-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gambarino';
+  src: url('~/assets/fonts/Gambarino-Regular.woff2') format('woff2'),
+    url('~/assets/fonts/Gambarino-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.font-gambarino {
+  font-family: 'Gambarino', sans-serif;
+}
+
+.bg-light {
+  background-color: #F9F5F3 !important;
+}
+
+.text-description {
+  color: #7D6665;
+}
+
+.text-light {
+  color: #F9F5F3;
+}
+
+.text-dark {
+  color: #1D1819;
+}
+
+.bg-dark {
+  background-color: #1D1819;
+}
+
+.text-primary {
+  color: #87AFB1;
+}
+
+.bg-primary {
+  background-color: #87AFB1;
+}
+
+
+.bg-grid {
+  position: relative;
+  background: url('/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bg-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+}
