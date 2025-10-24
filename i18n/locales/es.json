@@ -152,13 +152,16 @@
       "description": "Facile es una agencia de desarrollo web que crea soluciones web impactantes para empresas y startups."
     },
     "about": {
-      "title": "Facile - Acerca de"
+      "title": "Facile - Acerca de",
+      "description": "Descubre Facile, un equipo dedicado especializado en diseño, branding y desarrollo web. Diseño excepcional y excelencia técnica para tus proyectos digitales."
     },
     "portfolio": {
-      "title": "Facile - Portafolio"
+      "title": "Facile - Portafolio",
+      "description": "Explora nuestros proyectos recientes: aplicaciones web sofisticadas, diseños UI/UX pixel-perfect y soluciones digitales innovadoras para empresas y startups."
     },
     "contact": {
-      "title": "Facile - Contacto"
+      "title": "Facile - Contacto",
+      "description": "Contacta con Facile para discutir tu proyecto web. Tiempo de respuesta rápido de 24h. Creemos juntos algo extraordinario en el mundo digital."
     }
   }
 }

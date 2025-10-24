@@ -9,6 +9,27 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
   ],
   css: ["~/assets/css/main.css"],
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      htmlAttrs: {
+        lang: "fr",
+      },
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      ],
+      meta: [
+        { name: "theme-color", content: "#87AFB1" },
+        { name: "apple-mobile-web-app-capable", content: "yes" },
+        { name: "apple-mobile-web-app-status-bar-style", content: "#87AFB1" },
+        { property: "og:site_name", content: "Facile" },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:site", content: "@facile_studio" },
+      ],
+    },
+  },
   i18n: {
     locales: [
       {

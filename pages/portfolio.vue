@@ -107,6 +107,20 @@ const { t } = useI18n()
 
 useHead({
   title: t('meta.portfolio.title'),
+  meta: [
+    { name: 'description', content: t('meta.portfolio.description') },
+    { name: 'keywords', content: 'portfolio, web projects, web applications, UI/UX design, mobile apps, digital solutions' },
+    { name: 'author', content: 'Yann Thevenin' },
+    { property: 'og:title', content: t('meta.portfolio.title') },
+    { property: 'og:description', content: t('meta.portfolio.description') },
+    { property: 'og:image', content: '/og.png' },
+    { property: 'og:url', content: 'https://facile.studio/portfolio' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: t('meta.portfolio.title') },
+    { name: 'twitter:description', content: t('meta.portfolio.description') },
+    { name: 'twitter:image', content: '/og.png' }
+  ]
 })
 
 const projects = [

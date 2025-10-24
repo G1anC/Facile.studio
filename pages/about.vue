@@ -243,6 +243,20 @@ const { t } = useI18n()
 
 useHead({
   title: t('meta.about.title'),
+  meta: [
+    { name: 'description', content: t('meta.about.description') },
+    { name: 'keywords', content: 'about facile, web agency, design team, branding, UI/UX design, web development team' },
+    { name: 'author', content: 'Yann Thevenin' },
+    { property: 'og:title', content: t('meta.about.title') },
+    { property: 'og:description', content: t('meta.about.description') },
+    { property: 'og:image', content: '/og.png' },
+    { property: 'og:url', content: 'https://facile.studio/about' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: t('meta.about.title') },
+    { name: 'twitter:description', content: t('meta.about.description') },
+    { name: 'twitter:image', content: '/og.png' }
+  ]
 })
 </script>
 
