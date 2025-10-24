@@ -244,18 +244,20 @@ const { t } = useI18n()
 useHead({
   title: t('meta.about.title'),
   meta: [
-    { name: 'description', content: t('meta.about.description') },
-    { name: 'keywords', content: 'about facile, web agency, design team, branding, UI/UX design, web development team' },
-    { name: 'author', content: 'Yann Thevenin' },
-    { property: 'og:title', content: t('meta.about.title') },
-    { property: 'og:description', content: t('meta.about.description') },
-    { property: 'og:image', content: '/og.png' },
-    { property: 'og:url', content: 'https://facile.studio/about' },
-    { property: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: t('meta.about.title') },
-    { name: 'twitter:description', content: t('meta.about.description') },
-    { name: 'twitter:image', content: '/og.png' }
+    { hid: 'description', name: 'description', content: t('meta.about.description') },
+    { hid: 'keywords', name: 'keywords', content: 'about facile, web agency, design team, branding, UI/UX design, web development team' },
+    { hid: 'author', name: 'author', content: 'Yann Thevenin' },
+    { hid: 'og:title', property: 'og:title', content: t('meta.about.title') },
+    { hid: 'og:description', property: 'og:description', content: t('meta.about.description') },
+    { hid: 'og:image', property: 'og:image', content: 'https://facile.studio/og.png' },
+    { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+    { hid: 'og:image:height', property: 'og:image:height', content: '630' },
+    { hid: 'og:url', property: 'og:url', content: 'https://facile.studio/about' },
+    { hid: 'og:type', property: 'og:type', content: 'website' },
+    { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+    { hid: 'twitter:title', name: 'twitter:title', content: t('meta.about.title') },
+    { hid: 'twitter:description', name: 'twitter:description', content: t('meta.about.description') },
+    { hid: 'twitter:image', name: 'twitter:image', content: 'https://facile.studio/og.png' }
   ]
 })
 </script>

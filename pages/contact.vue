@@ -126,18 +126,20 @@ const { t } = useI18n()
 useHead({
   title: t('meta.contact.title'),
   meta: [
-    { name: 'description', content: t('meta.contact.description') },
-    { name: 'keywords', content: 'contact, get in touch, web development contact, hire web developer, project inquiry' },
-    { name: 'author', content: 'Yann Thevenin' },
-    { property: 'og:title', content: t('meta.contact.title') },
-    { property: 'og:description', content: t('meta.contact.description') },
-    { property: 'og:image', content: '/og.png' },
-    { property: 'og:url', content: 'https://facile.studio/contact' },
-    { property: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: t('meta.contact.title') },
-    { name: 'twitter:description', content: t('meta.contact.description') },
-    { name: 'twitter:image', content: '/og.png' }
+    { hid: 'description', name: 'description', content: t('meta.contact.description') },
+    { hid: 'keywords', name: 'keywords', content: 'contact, get in touch, web development contact, hire web developer, project inquiry' },
+    { hid: 'author', name: 'author', content: 'Yann Thevenin' },
+    { hid: 'og:title', property: 'og:title', content: t('meta.contact.title') },
+    { hid: 'og:description', property: 'og:description', content: t('meta.contact.description') },
+    { hid: 'og:image', property: 'og:image', content: 'https://facile.studio/og.png' },
+    { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+    { hid: 'og:image:height', property: 'og:image:height', content: '630' },
+    { hid: 'og:url', property: 'og:url', content: 'https://facile.studio/contact' },
+    { hid: 'og:type', property: 'og:type', content: 'website' },
+    { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+    { hid: 'twitter:title', name: 'twitter:title', content: t('meta.contact.title') },
+    { hid: 'twitter:description', name: 'twitter:description', content: t('meta.contact.description') },
+    { hid: 'twitter:image', name: 'twitter:image', content: 'https://facile.studio/og.png' }
   ]
 })
 
