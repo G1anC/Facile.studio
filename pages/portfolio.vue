@@ -126,14 +126,6 @@ useHead({
 const projects = [
   {
     id: 1,
-    title: 'Disti.life',
-    description: 'Disti.life is a comprehensive ERP solution tailored for distilleries, integrating advanced AI technologies to optimize production processes, manage inventory, and enhance decision-making through predictive analytics.',
-    technologies: ['Vue.js', 'Node.js', 'AI', 'PostegreSQL', 'Docker'],
-    icon: 'solar:bottle-bold-duotone',
-    link: 'https://disti.life'
-  },
-  {
-    id: 2,
     title: 'Solais Intranet',
     description: 'Solais is a robust intranet platform designed for a solar company, facilitating seamless internal communication, document management, and collaboration among teams, while providing tools for project tracking and resource allocation.',
     technologies: ['Angular', 'ExpressJS', 'MongoDB', 'Typescript'],
@@ -141,7 +133,7 @@ const projects = [
     link: 'https://solais.fr'
   },
   {
-    id: 3,
+    id: 2,
     title: 'Marcel',
     description: 'Marcel is an innovative gamified organisation app that transforms task management into an engaging experience, encouraging productivity and teamwork through game-like elements and rewards, suitable for both personal and professional use.',
     technologies: ['Svelte', 'Pocketbase', 'Typescript', 'GoLang'],
@@ -149,15 +141,7 @@ const projects = [
     link: 'https://marcel.my'
   },
   {
-    id: 4,
-    title: 'OffOn',
-    description: 'OffOn is a dynamic e-commerce platform specialized in smartphone sales and repairs, combining a sleek, user-friendly interface with powerful inventory and service management tools to streamline operations and enhance the customer experience.',
-    technologies: ['Vue', 'Nuxt', 'Directus', 'Typescript'],
-    icon: 'solar:monitor-smartphone-bold-duotone',
-    link: 'https://offon.store'
-  },
-  {
-    id: 5,
+    id: 3,
     title: 'Brain.h',
     description: 'Brain.h is a lightweight C library designed for building and training neural networks, offering a straightforward API and efficient performance, making it an ideal choice for developers seeking simplicity and control in AI projects.',
     technologies: ['C'],
