@@ -16,9 +16,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "fr",
       },
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       meta: [
         { name: "theme-color", content: "#87AFB1" },
         { name: "apple-mobile-web-app-capable", content: "yes" },
