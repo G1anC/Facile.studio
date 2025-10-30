@@ -4,7 +4,7 @@
 
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div v-for="i in 6" :key="'orb-' + i"
-           class="absolute rounded-full bg-gradient-to-br from-[#87AFB1]/10 to-[#87AFB1]/3 blur-2xl"
+           class="absolute rounded-full bg-gradient-to-br from-[#87AFB1]/20 to-[#87AFB1]/6 blur-[48px]"
            :class="getOrbSize(i)"
            :style="getOrbStyle(i)"></div>
     </div>
@@ -149,6 +149,30 @@ const projects = [
     technologies: ['C'],
     icon: 'solar:database-bold-duotone',
     link: 'https://github.com/saravenpi/brain.h'
+  },
+  {
+    id: 4,
+    title: "Evelyne Creations",
+    description: 'Eevelyne Creations is experienced painter Evelyne\'s portfolio built to enhance her paintings and creations. It is filled with animations and classy designs that make ger art really stand out.',
+    technologies: ['React', 'TailwindCSS', 'GSAP', 'Typescript'],
+    icon: "solar:pen-2-bold-duotone",
+    link: 'https://evelynecrea.com'
+  },
+  {
+    id: 5,
+    title: "AREA",
+    description: 'AREA is an app for creating powerful, configurable webhooks inspired by platforms like IFTTT — ideal for automating workflows and connecting services.',
+    technologies: ['Node.js', 'Next.js', 'Webhooks'],
+    icon: "solar:share-bold-duotone",
+    link: 'https://github.com/G1anC/AREA'
+  },
+  {
+    id: 6,
+    title: "Mont-K.",
+    description: 'The Mont-k. project is a redesign of the online store from a Berliner\'s bouldering shop.',
+    technologies: ['Figma'],
+    icon: "solar:bag-4-bold-duotone",
+    link: 'https://dribbble.com/webbygian?apply_modal=true'
   }
 ]
 
@@ -233,17 +257,18 @@ function getPillDotStyle(index) {
 
 <style scoped>
 .project-card {
-  transition: transform 0.3s, opacity 0.5s, box-shadow 0.3s;
+  transition: transform 0.3s, opacity 0.5s, box-shadow 0.3s, background 0.3s;
   opacity: 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(125, 125, 125, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(25px);
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(135, 175, 177, 0.3);
+  background: rgba(125, 125, 125, 0.3);
+  box-shadow: 0 10px 40px rgba(135, 175, 177, 0.3);
   border-color: rgba(135, 175, 177, 0.4);
 }
 
