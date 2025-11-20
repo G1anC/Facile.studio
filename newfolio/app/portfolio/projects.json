@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Gian",
+    "description": "Portfolio",
+    "link": "https://dribbble.com/shots/26755861-PORTFOLIO",
+    "weeks": 3
+  },
+  {
+    "name": "Solaïs Intra",
+    "description": "Intra application",
+    "link": "https://solais.fr/",
+    "weeks": 8
+  },
+  {
+    "name": "Brain.h",
+    "description": "Neural network library",
+    "link": "https://github.com/saravenpi/brain.h",
+    "weeks": 4
+  },
+  {
+    "name": "Mont-k",
+    "description": "E-Commerce design concept",
+    "link": "https://dribbble.com/shots/26711277-MONT-K-UI-UX-DESIGN",
+    "weeks": 1
+  },
+  {
+    "name": "Waves",
+    "description": "Music software.",
+    "link": "https://github.com/saravenpi/waves",
+    "weeks": 1
+  },
+  {
+    "name": "Marcel",
+    "description": "WellBeing application",
+    "link": "https://marcel.my/",
+    "weeks": 12
+  },
+  {
+    "name": "EvelyneCrea",
+    "description": "Artist portfolio",
+    "link": "https://www.evelynecrea.com",
+    "weeks": 8
+  },
+  {
+    "name": "AREA",
+    "description": "Application",
+    "link": "https://www.evelynecrea.com",
+    "weeks": 6
+  }
+]
