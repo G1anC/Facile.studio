@@ -49,6 +49,7 @@ export default function Portfolio() {
 
                     <div className="flex flex-col w-full flex-shrink-0">
                         {data.map((item, id) => {
+                            // @ts-ignore
                             return (
                                 <a
                                     href={item.link}

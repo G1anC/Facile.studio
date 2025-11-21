@@ -19,14 +19,14 @@ export default function Home() {
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                    w-full h-auto min-h-full object-cover"
             />
+
             <img
                 alt="Facile"
                 src="/icons/FACILE.svg"
                 className="absolute bottom-0 w-full left-0"
             />
         </div>
-
-        <Footer setOpen={setOpen}/>
+        <Footer setOpen={setOpen} />
         <ContactModal open={open} setOpen={setOpen} />
     </div>
   );

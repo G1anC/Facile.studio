@@ -158,7 +158,12 @@ export default function AboutPage() {
                                 Lead Developer & Co-Founder
                             </p>
                             <p className="text-justify">
-                                Fullstack developer with an AI background, passionate about creating  exceptional digital experiences with modern technologies, clean code  architecture, and an ecological approach to development.                            </p>
+                                Fullstack developer with an AI background, passionate about creating  exceptional digital experiences with modern technologies, clean code  architecture, and an ecological approach to development.
+                            </p>
+                            <div className={"flex items-center justify-start gap-6"}>
+                                <a href={"https://www.dribbble.com/webbygian"}><img src={"/icons/linkedIn.svg"} alt={"linkedIn"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://www.github.com/saravenpi"}><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                            </div>
                         </Box>
 
                         <Box>
@@ -168,7 +173,13 @@ export default function AboutPage() {
                                 UI / Web Designer & Co-founder
                             </p>
                             <p className="text-justify">
-                                Creative graphic designer and web developer, specializing in crafting  beautiful, user-centric designs and bringing them to life with modern  web technologies.                            </p>
+                                Creative graphic designer and web developer, specializing in crafting  beautiful, user-centric designs and bringing them to life with modern  web technologies.
+                            </p>
+                            <div className={"flex items-center justify-start gap-6"}>
+                                <a href={"https://www.dribbble.com/webbygian"}><img src={"/icons/dribbbleWhite.svg"} alt={"dribbble"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://www.github.com/G1anC"}><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://www.instagram.com/webbygian"}><img src={"/icons/instagramWhite.svg"} alt={"instagram"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                            </div>
                         </Box>
                     </div>
                 </section>
