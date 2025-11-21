@@ -41,8 +41,8 @@ export default function Home() {
         if (start) {
             tl.to(".disappear", {
                 delay: 0.2,
-                stagger: 0.2,
-                y: "-100%",
+                stagger: 0.1,
+                y: "-110%",
                 duration: 1,
                 ease: "power2.inOut",
             })
@@ -54,7 +54,7 @@ export default function Home() {
             }, "<").to(background.current, {
                 delay: 0.5,
                 duration: 3,
-                ease: "power4.out",
+                ease: "power4.inOut",
                 scale: 1,
             }, "<");
         }
@@ -64,7 +64,7 @@ export default function Home() {
     return (
         <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
-            <div ref={rideaux} className={"absolute rounded-[32px] w-screen h-screen z-99 bg-[#CAE6D8] flex flex-col gap-8 items-center justify-center"}>
+            <div ref={rideaux} className={"absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-99 bg-[#CAE6D8] flex flex-col gap-8 items-center justify-center"}>
                 <div className={"overflow-hidden"}>
                     <img src={"/icons/F..svg"} alt="" className={"w-24 disappear"} />
                 </div>
@@ -77,13 +77,13 @@ export default function Home() {
 
                 <div className={"gap-0"}>
                     <div className="overflow-hidden">
-                        <div className={"opacity-66 text-center leading-[105%] disappear"}>
+                        <div className={"opacity-66 text-center disappear"}>
                             Where exceptional design meets
                         </div>
                     </div>
 
                     <div className="overflow-hidden">
-                        <div className={"opacity-66 text-center leading-[105%] disappear"}>
+                        <div className={"opacity-66 text-center disappear"}>
                             technical excellence
                         </div>
                     </div>
@@ -95,7 +95,7 @@ export default function Home() {
                     alt="background"
                     src="/Backgrounds/background.png"
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                       w-full h-auto min-h-full object-cover scale-130"
+                       w-full h-auto min-h-full object-cover scale-150"
                 />
 
                 <img
