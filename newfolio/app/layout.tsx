@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
-import Header from "./components/header";
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
 
 export const metadata: Metadata = {
     title: "Facile.",
     description: "Facile. Studio",
 };
+
+const manrope = Manrope({
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700", "800"],
+    variable: "--font-manrope",
+});
 
 export default function RootLayout({
     children,
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
+            <body className={`${manrope.variable}`}>
                     {children}
             </body>
         </html>

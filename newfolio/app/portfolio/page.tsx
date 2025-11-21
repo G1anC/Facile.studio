@@ -15,7 +15,7 @@ export default function Portfolio() {
     const backgroundRef = useRef<(HTMLDivElement | null)[]>([]);
 
     return (
-        <div className="bg-[#CAE6D8] sm:p-4 p-2 w-screen h-screen tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+        <div className="bg-[#CAE6D8] p-4 w-screen h-screen tracking-tight text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
             <div className="w-full overflow-hidden h-full relative rounded-[32px]">
                 {data.map((item, id) => (

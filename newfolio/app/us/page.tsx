@@ -18,7 +18,7 @@ export default function AboutPage() {
     const [open, setOpen] = React.useState(false);
 
     return (
-        <div className="bg-[#CAE6D8] sm:p-4 p-2 w-screen h-screen overflow-hidden tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+        <div className="bg-[#CAE6D8] p-4 w-screen h-screen overflow-hidden tracking-tight text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
             <div
                 style={{
@@ -161,7 +161,7 @@ export default function AboutPage() {
                                 Fullstack developer with an AI background, passionate about creating  exceptional digital experiences with modern technologies, clean code  architecture, and an ecological approach to development.
                             </p>
                             <div className={"flex items-center justify-start gap-6"}>
-                                <a href={"https://www.dribbble.com/webbygian"}><img src={"/icons/linkedIn.svg"} alt={"linkedIn"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://linkedin.com/in/thevyann"}><img src={"/icons/linkedIn.svg"} alt={"linkedIn"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
                                 <a href={"https://www.github.com/saravenpi"}><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
                             </div>
                         </Box>
