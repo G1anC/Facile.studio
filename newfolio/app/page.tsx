@@ -40,12 +40,14 @@ export default function Home() {
     React.useEffect(() => {
         if (start) {
             tl.to(".disappear", {
-                delay: 0.5,
-                stagger: 0.3,
-                opacity: 0,
+                delay: 0.2,
+                stagger: 0.2,
+                y: "-100%",
                 duration: 1,
-                ease: "power4.out",
-            }).to(rideaux.current, {
+                ease: "power2.inOut",
+            })
+
+                .to(rideaux.current, {
                 duration: 2,
                 ease: "power2.inOut",
                 height: 0,
@@ -63,15 +65,28 @@ export default function Home() {
         <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
             <div ref={rideaux} className={"absolute rounded-[32px] w-screen h-screen z-99 bg-[#CAE6D8] flex flex-col gap-8 items-center justify-center"}>
-                <img src={"/icons/F..svg"} alt="" className={"w-48 disappear"} />
-
-                <div className="font-extrabold disappear">
-                    {percent}%
+                <div className={"overflow-hidden"}>
+                    <img src={"/icons/F..svg"} alt="" className={"w-24 disappear"} />
                 </div>
 
-                <div className={"opacity-66 text-center leading-[105%] disappear"}>
-                    Where exceptional design meets<br/>
-                    technical excellence
+                <div className={"overflow-hidden"}>
+                    <div className="font-extrabold disappear">
+                        {percent}%
+                    </div>
+                </div>
+
+                <div className={"gap-0"}>
+                    <div className="overflow-hidden">
+                        <div className={"opacity-66 text-center leading-[105%] disappear"}>
+                            Where exceptional design meets
+                        </div>
+                    </div>
+
+                    <div className="overflow-hidden">
+                        <div className={"opacity-66 text-center leading-[105%] disappear"}>
+                            technical excellence
+                        </div>
+                    </div>
                 </div>
             </div>
 
