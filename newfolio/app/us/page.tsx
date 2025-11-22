@@ -171,8 +171,8 @@ export default function AboutPage() {
                                 Fullstack developer with an AI background, passionate about creating  exceptional digital experiences with modern technologies, clean code  architecture, and an ecological approach to development.
                             </p>
                             <div className={"flex items-center justify-start gap-6"}>
-                                <a href={"https://linkedin.com/in/thevyann"}><img src={"/icons/linkedIn.svg"} alt={"linkedIn"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
-                                <a href={"https://www.github.com/saravenpi"}><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://linkedin.com/in/thevyann"} target="_blank" rel="noopener noreferrer"><img src={"/icons/linkedIn.svg"} alt={"linkedIn"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://www.github.com/saravenpi"} target="_blank" rel="noopener noreferrer"><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
                             </div>
                         </Box>
 
@@ -187,9 +187,15 @@ export default function AboutPage() {
                             <p className="text-justify mt-6">
                                 Passionate creative UI, web and graphic designer specializing in crafting  beautiful, user-centric designs as well as bringing them to life with modern  web technologies using his development skills.                             </p>
                             <div className={"flex items-center justify-start gap-6 mt-3"}>
-                                <a href={"https://www.dribbble.com/webbygian"}><img src={"/icons/dribbbleWhite.svg"} alt={"dribbble"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
-                                <a href={"https://www.github.com/G1anC"}><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
-                                <a href={"https://www.instagram.com/webbygian"}><img src={"/icons/instagramWhite.svg"} alt={"instagram"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
+                                <a href={"https://www.dribbble.com/webbygian"}  target="_blank" rel="noopener noreferrer">
+                                    <img src={"/icons/dribbbleWhite.svg"} alt={"dribbble"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
+                                </a>
+                                <a href={"https://www.github.com/G1anC"} target="_blank" rel="noopener noreferrer">
+                                    <img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
+                                </a>
+                                <a href={"https://www.instagram.com/webbygian"} target="_blank" rel="noopener noreferrer">
+                                    <img src={"/icons/instagramWhite.svg"} alt={"instagram"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
+                                    </a>
                             </div>
                         </Box>
                     </div>
