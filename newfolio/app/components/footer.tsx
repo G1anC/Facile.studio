@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import Button from "@/app/components/button";
+import { Button } from "@/app/components/button";
 
 type ContactModalProps = {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;

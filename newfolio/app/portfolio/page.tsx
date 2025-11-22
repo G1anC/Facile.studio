@@ -6,6 +6,7 @@ import React, { useRef } from "react"
 import Footer from "../components/footer";
 import ContactModal from "@/app/components/contactModal";
 import Header from "@/app/components/header";
+import {RideauxIn} from "@/app/components/rideaux";
 
 export default function Portfolio() {
     const [open, setOpen] = React.useState(false);
@@ -14,8 +15,13 @@ export default function Portfolio() {
     const bandsLeftRef  = useRef<(HTMLDivElement | null)[]>([]);
     const backgroundRef = useRef<(HTMLDivElement | null)[]>([]);
 
+    React.useEffect(() => {
+        RideauxIn(0);
+    }, [])
+
     return (
-        <div className="bg-[#CAE6D8] p-4 w-screen h-screen tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+        <div className="relative bg-[#CAE6D8] p-4 w-screen h-screen tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-99 bg-[#CAE6D8]"} />
             <Header setOpen={setOpen} />
             <div className="w-full overflow-hidden h-full relative rounded-[32px]">
                 {data.map((item, id) => (

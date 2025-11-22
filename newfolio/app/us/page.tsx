@@ -5,6 +5,7 @@ import Footer from "@/app/components/footer";
 import ContactModal from "@/app/components/contactModal";
 import React from "react";
 import Header from "@/app/components/header";
+import {RideauxIn} from "@/app/components/rideaux";
 
 const Box = ({children}: {children: React.ReactNode}) => {
     return (
@@ -17,9 +18,16 @@ const Box = ({children}: {children: React.ReactNode}) => {
 export default function AboutPage() {
     const [open, setOpen] = React.useState(false);
 
+    React.useEffect(() => {
+        RideauxIn(0);
+    }, [])
+
     return (
-        <div className="bg-[#CAE6D8] p-4 w-screen h-screen overflow-hidden tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+        <div className="relative bg-[#CAE6D8] p-4 w-screen h-screen overflow-hidden tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-99 bg-[#CAE6D8]"} />
             <Header setOpen={setOpen} />
+
+
             <div
                 style={{
                     backgroundImage: 'url("/Backgrounds/blurBackground.png")',
@@ -32,7 +40,7 @@ export default function AboutPage() {
                 <section className="w-full max-w-3xl z-10 py-20 mt-64 pb-16 flex flex-col gap-5 items-center text-center">
 
                     {/* ABOUT FACILE */}
-                    <div className={"flex items-end justify-end gap-8"}>
+                    <div className={"flex sm:flex-row flex-col items-center justify-end sm:gap-8"}>
                         <h1 className="text-8xl font-extrabold">
                             ABOUT
                         </h1>
@@ -140,7 +148,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* SKILLS */}
-                <section className="w-full max-w-2xl px-6 py-20 z-10  flex flex-col items-center justify-center gap-6">
+                <section className="w-full max-w-3xl px-6 py-20 z-10  flex flex-col items-center justify-center gap-6">
                     <div className={"text-center"}>
                         <h1 className="text-3xl font-extrabold">
                             OUR TEAM
@@ -152,12 +160,14 @@ export default function AboutPage() {
 
                     <div className="grid md:grid-cols-2 gap-6 mt-8">
                         <Box>
-                            <Image src={"/icons/yann.svg"} alt={"logo"} width={40} height={40} />
-                            <h3 className="text-xl font-extrabold leading-[90%] text-[#CAE6D8]">YANN<br />THEVENIN</h3>
-                            <p className="text-justify">
-                                Lead Developer & Co-Founder
-                            </p>
-                            <p className="text-justify">
+                            <div>
+                                <Image src={"/icons/yann.svg"} alt={"logo"} width={64} height={64} />
+                                <h3 className="text-3xl font-extrabold leading-[100%] text-[#CAE6D8] mt-3">YANN<br />THEVENIN</h3>
+                                <p className="text-justify mt-3">
+                                    Lead Developer & Co-Founder
+                                </p>
+                            </div>
+                            <p className="text-justify mt-6">
                                 Fullstack developer with an AI background, passionate about creating  exceptional digital experiences with modern technologies, clean code  architecture, and an ecological approach to development.
                             </p>
                             <div className={"flex items-center justify-start gap-6"}>
@@ -167,15 +177,16 @@ export default function AboutPage() {
                         </Box>
 
                         <Box>
-                            <Image src={"/icons/noah.svg"} alt={"logo"} width={40} height={40} />
-                            <h3 className="text-xl font-extrabold leading-[90%] text-[#CAE6D8]">NOAH<br />STEINIGER</h3>
-                            <p className="text-start">
-                                UI / Web Designer & Co-founder
-                            </p>
-                            <p className="text-justify">
-                                Creative graphic designer and web developer, specializing in crafting  beautiful, user-centric designs and bringing them to life with modern  web technologies.
-                            </p>
-                            <div className={"flex items-center justify-start gap-6"}>
+                            <div className={""}>
+                                <Image src={"/icons/noah.svg"} alt={"logo"} width={64} height={64} />
+                                <h3 className="text-3xl font-extrabold leading-[100%] text-[#CAE6D8] mt-4">NOAH<br />STEINIGER</h3>
+                                <p className="text-start mt-4">
+                                    UI / Web Designer & Co-founder
+                                </p>
+                            </div>
+                            <p className="text-justify mt-6">
+                                Passionate creative UI, web and graphic designer specializing in crafting  beautiful, user-centric designs as well as bringing them to life with modern  web technologies using his development skills.                             </p>
+                            <div className={"flex items-center justify-start gap-6 mt-3"}>
                                 <a href={"https://www.dribbble.com/webbygian"}><img src={"/icons/dribbbleWhite.svg"} alt={"dribbble"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
                                 <a href={"https://www.github.com/G1anC"}><img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>
                                 <a href={"https://www.instagram.com/webbygian"}><img src={"/icons/instagramWhite.svg"} alt={"instagram"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} /></a>

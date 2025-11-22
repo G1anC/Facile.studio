@@ -5,31 +5,31 @@ import Header from "@/app/components/header";
 import React from "react";
 import ContactModal from "@/app/components/contactModal";
 import gsap from "gsap";
+import { RideauxIn } from "@/app/components/rideaux";
 
 export default function Home() {
     const [start, setStart] = React.useState(false);
     const [open, setOpen] = React.useState(false);
     const [percent, setPercent] = React.useState(0);
-    const rideaux = React.useRef<HTMLDivElement>();
+    const stack = React.useRef<HTMLDivElement>();
     const background = React.useRef<HTMLDivElement>();
+    const title = React.useRef(null);
     const tl = gsap.timeline({})
+
     React.useEffect(() => {
-        // Wait 0.2s before starting the counter
         const timeout = setTimeout(() => {
             let value = 0;
-            const duration = 1000; // 1 second
-            const step = 1000 / 60; // ~60 FPS
+            const duration = 1000;
+            const step = 1000 / 60;
             const increment = 100 / (duration / step);
 
             const interval = setInterval(() => {
                 value += increment;
-
                 if (value >= 100) {
                     value = 100;
                     clearInterval(interval);
-                    setStart(true); // trigger GSAP HERE (when finished)
+                    setStart(true);
                 }
-
                 setPercent(Math.floor(value));
             }, step);
         }, 500);
@@ -38,33 +38,40 @@ export default function Home() {
     }, []);
 
     React.useEffect(() => {
+        RideauxIn(2.4)
         if (start) {
-            tl.to(".disappear", {
-                delay: 0.2,
-                stagger: 0.1,
-                y: "-110%",
-                duration: 1,
-                ease: "power2.inOut",
-            })
-
-                .to(rideaux.current, {
-                duration: 2,
-                ease: "power2.inOut",
-                height: 0,
-            }, "<").to(background.current, {
-                delay: 0.5,
-                duration: 3,
-                ease: "power4.inOut",
-                scale: 1,
-            }, "<");
-        }
+            tl
+                .to(".disappear", {
+                    delay: 0.2,
+                    stagger: 0.1,
+                    y: "-110%",
+                    duration: 1,
+                    ease: "power2.inOut",
+                })
+                .to(background.current, {
+                    delay: 0.2,
+                    duration: 3,
+                    ease: "power4.inOut",
+                    scale: 1,
+                    filter: "blur(0px)"
+                }, "<")
+                .to(stack.current, {
+                    height:0,
+                    duration: 1.5,
+                    ease: "power4.inOut",
+                }, "<")
+                .set(stack.current, {
+                    display: "none"
+                });
+        };
     }, [start]);
 
-
     return (
-        <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight text-[#1E1E1E] flex flex-col gap-3">
+        <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight overflow-x-hidden text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
-            <div ref={rideaux} className={"absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-99 bg-[#CAE6D8] flex flex-col gap-8 items-center justify-center"}>
+
+            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-99 bg-[#CAE6D8]"} />
+            <div ref={stack} className={"absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-999 flex flex-col gap-8 items-center justify-center"}>
                 <div className={"overflow-hidden"}>
                     <img src={"/icons/F..svg"} alt="" className={"w-24 disappear"} />
                 </div>
@@ -95,10 +102,10 @@ export default function Home() {
                     alt="background"
                     src="/Backgrounds/background.png"
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                       w-full h-auto min-h-full object-cover scale-150"
+                       w-full h-auto min-h-full object-cover scale-150 blur-3xl"
                 />
 
-                <img
+                <img ref={title}
                     alt="Facile"
                     src="/icons/FACILE.svg"
                     className="absolute bottom-0 w-full left-0"
