@@ -67,11 +67,11 @@ export default function Home() {
     }, [start]);
 
     return (
-        <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight overflow-x-hidden text-[#1E1E1E] flex flex-col gap-3">
+        <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight overflow-hidden text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
 
-            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-99 bg-[#CAE6D8]"} />
-            <div ref={stack} className={"absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-999 flex flex-col gap-8 items-center justify-center"}>
+            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen overflow-hidden h-screen z-99 bg-[#CAE6D8]"} />
+            <div ref={stack} className={"absolute rounded-b-[64px] top-0 left-0 w-screen overflow-hidden h-screen z-999 flex flex-col gap-8 items-center justify-center"}>
                 <div className={"overflow-hidden"}>
                     <img src={"/icons/F..svg"} alt="" className={"w-24 disappear"} />
                 </div>
