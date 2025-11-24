@@ -15,7 +15,7 @@ export default function Home() {
     const [percent, setPercent] = React.useState(0);
     const stack = React.useRef<HTMLDivElement>();
     const background = React.useRef<HTMLDivElement>();
-    const title = React.useRef(null);
+    const title = React.useRef<HTMLDivElement>(null);
     const tl = gsap.timeline({})
 
     React.useEffect(() => {
@@ -68,6 +68,19 @@ export default function Home() {
         };
     }, [start]);
 
+    // Animation infinie sur mobile
+    React.useEffect(() => {
+        if (title.current && window.innerWidth < 1024) {
+            gsap.to(title.current, {
+                delay: 3,
+                x: "-230%",
+                duration: 5,
+                ease: "none",
+                repeat: -1,
+            });
+        }
+    }, []);
+
     return (
         <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight overflow-hidden text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
@@ -107,11 +120,20 @@ export default function Home() {
                        w-full h-auto min-h-full object-cover scale-150 blur-3xl"
                 />
 
-                <img ref={title}
-                     alt="Facile"
-                     src="/icons/FACILE.svg"
-                     className="absolute bottom-0 w-full left-0"
-                />
+                <div ref={title} className="absolute -bottom-1 left-0 lg:w-full w-[200%] flex items-start justify-start">
+                    <div className="flex shrink-0 gap-12 xl:w-full">
+                        <img
+                            alt="Facile"
+                            src="/icons/FACILE.svg"
+                            className="min-h-[400px] xl:min-h-0 object-cover w-full"
+                        />
+                        {window.innerWidth < 1024 && <img
+                            alt="Facile"
+                            src="/icons/FACILE.svg"
+                            className="min-h-[400px] object-cover"
+                        />}
+                    </div>
+                </div>
             </div>
 
             <Footer setOpen={setOpen} />

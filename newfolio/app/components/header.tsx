@@ -33,7 +33,7 @@ const Header = ({setOpen}: ContactModalProps) => {
     };
 
     return (
-        <div className={"z-50 absolute w-full top-0"}>
+        <div className={"z-99 absolute w-full top-0"}>
             <div className={"absolute top-0 left-1/2 -translate-x-1/2 z-50 lg:flex hidden items-start"}>
                 <img src={"/icons/Exclude.svg"} alt={""} className={"mt-4"} width={32} height={32} />
 

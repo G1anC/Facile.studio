@@ -64,7 +64,7 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full flex-shrink-0">
+                    <div className="flex flex-col w-full z-0 flex-shrink-0">
                         {data.map((item, id) => {
                             return (
                                 <a

@@ -41,7 +41,7 @@ export default function AboutPage() {
                 {/* ABOUT FACILE */}
                 <section className="w-full max-w-3xl z-10 py-20 mt-64 pb-16 flex flex-col gap-5 items-center text-center">
                     <div className={"flex lg:flex-row flex-col items-center justify-center lg:gap-8 overflow-visible"}>
-                        <h1 className="text-[90px] font-extrabold shrink-0">
+                        <h1 className="text-[90px] leading-[100%] font-extrabold shrink-0">
                             {t('title')}
                         </h1>
                         <div className={"pb-2 shrink-0 min-w-[300px]"}>
