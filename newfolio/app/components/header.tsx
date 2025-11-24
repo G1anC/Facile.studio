@@ -1,13 +1,36 @@
 'use client'
 import React from "react";
 import { TransitionButton, LogoButton } from "@/app/components/button"
+import { useTranslations } from 'next-intl';
+import { useParams, usePathname, useRouter } from 'next/navigation';
 
 type ContactModalProps = {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
+const languages = [
+    { code: 'en', label: 'EN', flag: '🇬🇧' },
+    { code: 'fr', label: 'FR', flag: '🇫🇷' },
+    { code: 'es', label: 'ES', flag: '🇪🇸' },
+    { code: 'de', label: 'DE', flag: '🇩🇪' }
+];
+
 const Header = ({setOpen}: ContactModalProps) => {
+    const t = useTranslations('common.header');
+    const params = useParams();
+    const pathname = usePathname();
+    const router = useRouter();
+    const locale = params.locale as string;
     const [openHeader, setOpenHeader] = React.useState(false);
+    const [openLangDropdown, setOpenLangDropdown] = React.useState(false);
+
+    const currentLang = languages.find(lang => lang.code === locale) || languages[0];
+
+    const switchLanguage = (newLocale: string) => {
+        const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+        router.push(newPath);
+        setOpenLangDropdown(false);
+    };
 
     return (
         <div className={"z-50 absolute w-full top-0"}>
@@ -16,8 +39,35 @@ const Header = ({setOpen}: ContactModalProps) => {
 
                 <div className={"px-8 py-4 bg-[#CAE6D8] flex items-center gap-6 rounded-b-[32px]"}>
                     <LogoButton />
-                    <TransitionButton text={"Portfolio"} icon={"folder"} href={"/portfolio"} />
-                    <TransitionButton text={"About us"} icon={"us"} href={"/us"} />
+                    {/* Language Selector */}
+                    <div className="relative">
+                        <button
+                            onClick={() => setOpenLangDropdown(!openLangDropdown)}
+                            className="border-2 border-transparent hover:border-[#1E1E1E]/50 rounded-full px-3 py-2 duration-150 transition-colors flex gap-2 items-center cursor-pointer "
+                        >
+                            <span>{currentLang.flag}</span>
+                        </button>
+
+                        {openLangDropdown && (
+                            <div className="absolute top-full mt-2 bg-[#CAE6D8] rounded-2xl border-2 border-[#1E1E1E]/20 overflow-hidden shadow-lg min-w-[120px]">
+                                {languages.map((lang) => (
+                                    <button
+                                        key={lang.code}
+                                        onClick={() => switchLanguage(lang.code)}
+                                        className={`w-full px-4 py-2 flex gap-2 items-center hover:bg-[#1E1E1E] hover:text-[#CAE6D8] transition-colors ${
+                                            lang.code === locale ? 'bg-[#1E1E1E]/10 font-semibold' : ''
+                                        }`}
+                                    >
+                                        <span>{lang.flag}</span>
+                                        <span>{lang.label}</span>
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                    <TransitionButton text={t('portfolio')} icon={"folder"} href={`/${locale}/portfolio`} />
+                    <TransitionButton text={t('aboutUs')} icon={"us"} href={`/${locale}/us`} />
+
                 </div>
 
                 <img src={"/icons/Exclude.svg"} alt={""} className={"scale-x-[-1] mt-4"} width={32} height={32} />
@@ -27,7 +77,6 @@ const Header = ({setOpen}: ContactModalProps) => {
                 <div className={"p-6 pr-10 bg-[#CAE6D8] rounded-bl-[32px]"}>
                     <button className="cursor-pointer" onClick={() => {
                         setOpenHeader(true);
-                        console.log(openHeader);
                     }}>
                         <img src={"/icons/menu.svg"} alt={"Home logo"} width={20} height={20} />
                     </button>
@@ -41,9 +90,9 @@ const Header = ({setOpen}: ContactModalProps) => {
                                 className="absolute top-8 left-8 cursor-pointer text-[#1E1E1E]" >
                                 <img src={"/icons/arrow.svg"} alt="arrow" width={20} height={20} />
                             </button>
-                            <a href={"/"}>Home</a>
-                            <a href={"/portfolio"}>Portfolio</a>
-                            <a href={"/us"}>Us</a>
+                            <a href={`/${locale}`}>{t('home')}</a>
+                            <a href={`/${locale}/portfolio`}>{t('portfolio')}</a>
+                            <a href={`/${locale}/us`}>{t('aboutUs')}</a>
                             <button
                                 onClick={() => {
                                     setOpen(true);
@@ -51,9 +100,28 @@ const Header = ({setOpen}: ContactModalProps) => {
                                 }}
                                 className={"w-auto"}
                             >
-                                Contact us
+                                {t('contactUs')}
                             </button>
 
+                            {/* Language Selector Mobile */}
+                            <div className="flex gap-2 pt-4 border-t border-[#1E1E1E]/20">
+                                {languages.map((lang) => (
+                                    <button
+                                        key={lang.code}
+                                        onClick={() => {
+                                            switchLanguage(lang.code);
+                                            setOpenHeader(false);
+                                        }}
+                                        className={`px-3 py-2 rounded-full transition-colors ${
+                                            lang.code === locale
+                                                ? 'bg-[#1E1E1E] text-[#CAE6D8]'
+                                                : 'bg-[#1E1E1E]/10 hover:bg-[#1E1E1E]/20'
+                                        }`}
+                                    >
+                                        <span className="text-lg">{lang.flag}</span>
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 }

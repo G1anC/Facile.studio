@@ -1,0 +1,147 @@
+{
+  "common": {
+    "header": {
+      "home": "Startseite",
+      "portfolio": "Portfolio",
+      "aboutUs": "Über uns",
+      "contactUs": "Kontaktieren Sie uns"
+    },
+    "footer": {
+      "hireUs": "Beauftragen Sie uns",
+      "callUs": "Rufen Sie uns an",
+      "buildTogether": "Lassen Sie uns gemeinsam eine Website erstellen.",
+      "madeBy": "_ Erstellt von Facile. Studio @ 2025"
+    },
+    "contactModal": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Telefon",
+      "message": "Nachricht",
+      "send": "Senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht gesendet!",
+      "error": "Serverfehler. Versuchen Sie es später erneut."
+    }
+  },
+  "home": {
+    "loading": {
+      "line1": "Wo außergewöhnliches Design auf",
+      "line2": "technische Exzellenz trifft"
+    }
+  },
+  "portfolio": {
+    "headers": {
+      "name": "NAME",
+      "type": "TYP",
+      "time": "ZEIT (WOCHEN)"
+    },
+    "projects": [
+      {
+        "name": "Gian",
+        "description": "Portfolio"
+      },
+      {
+        "name": "Solaïs Intra",
+        "description": "Intranet-Anwendung"
+      },
+      {
+        "name": "Brain.h",
+        "description": "Neuronale Netzwerk-Bibliothek"
+      },
+      {
+        "name": "Mont-k",
+        "description": "E-Commerce Design-Konzept"
+      },
+      {
+        "name": "Waves",
+        "description": "Musik-Software"
+      },
+      {
+        "name": "Marcel",
+        "description": "Wellness-Anwendung"
+      },
+      {
+        "name": "EvelyneCrea",
+        "description": "Künstler-Portfolio"
+      },
+      {
+        "name": "AREA",
+        "description": "Anwendung"
+      }
+    ]
+  },
+  "about": {
+    "title": "ÜBER UNS",
+    "subtitle": "Wo außergewöhnliches Design auf\ntechnische Exzellenz trifft",
+    "mission": {
+      "title": "UNSERE MISSION",
+      "text": "Wir sind ein engagiertes Team, das sich auf Design, Branding und Webentwicklung spezialisiert hat. Wir erstellen funktionale, professionelle Websites mit einem starken Fokus auf UI/UX-Design, das fesselt und konvertiert.\n\nUnser Ansatz kombiniert beeindruckendes visuelles Design mit robuster technischer Umsetzung. Von der Markenidentität bis zu pixelperfekten Oberflächen schaffen wir digitale Erlebnisse, die nicht nur fantastisch aussehen, sondern auch einwandfrei funktionieren.\n\nWir sind stolz auf unser Engagement für Design-Exzellenz, Liebe zum Detail und die Schaffung bedeutungsvoller Benutzererfahrungen. Ob Sie eine Marke von Grund auf aufbauen oder eine Website benötigen, die heraussticht – wir bringen Kreativität und Professionalität in jedes Projekt."
+    },
+    "whatSetsUsApart": {
+      "title": "WAS UNS\nUNTERSCHEIDET",
+      "items": [
+        "Ökologische Entwicklung",
+        "Schöner & sauberer Code",
+        "Kollaborativer Prozess",
+        "Design-First-Ansatz"
+      ]
+    },
+    "services": {
+      "title": "UNSERE DIENSTLEISTUNGEN",
+      "subtitle": "Wo außergewöhnliches Design auf\ntechnische Exzellenz trifft",
+      "design": {
+        "title": "DESIGN &\nBRANDING",
+        "description": "Erstellen Sie eine überzeugende Markenidentität mit individuellen Logos, Farbpaletten, Typografie und umfassenden Markenrichtlinien, die Ihr Unternehmen unvergesslich machen.",
+        "items": [
+          "Logo & visuelle Identität",
+          "Markenrichtlinien",
+          "Marketingmaterialien"
+        ]
+      },
+      "uiux": {
+        "title": "UI/UX &\nENTWICKLUNG",
+        "description": "Entwerfen und entwickeln Sie beeindruckende, benutzerzentrierte Websites, die schöne Ästhetik mit außergewöhnlicher Funktionalität und nahtlosen Benutzererfahrungen kombinieren.",
+        "items": [
+          "Pixelperfektes Design",
+          "Benutzerzentrierte UX",
+          "Responsive & schnell"
+        ]
+      },
+      "webapp": {
+        "title": "WEB\nANWENDUNG",
+        "description": "Entwickeln Sie anspruchsvolle Webanwendungen mit intuitiven Oberflächen, flüssigen Interaktionen und leistungsstarker Funktionalität, die Benutzer lieben.",
+        "items": [
+          "Moderne Frameworks",
+          "Flüssige Animationen",
+          "Produktionsbereit"
+        ]
+      }
+    },
+    "team": {
+      "title": "UNSER TEAM",
+      "subtitle": "Die kreativen Köpfe hinter Facile.",
+      "yann": {
+        "name": "YANN\nTHEVENIN",
+        "role": "Lead Developer & Mitgründer",
+        "description": "Fullstack-Entwickler mit KI-Hintergrund, leidenschaftlich daran interessiert, außergewöhnliche digitale Erlebnisse mit modernen Technologien, sauberer Code-Architektur und einem ökologischen Entwicklungsansatz zu schaffen."
+      },
+      "noah": {
+        "name": "NOAH\nSTEINIGER",
+        "role": "UI / Web Designer & Mitgründer",
+        "description": "Leidenschaftlicher kreativer UI-, Web- und Grafikdesigner, spezialisiert auf die Gestaltung schöner, benutzerzentrierter Designs sowie deren Umsetzung mit modernen Webtechnologien unter Verwendung seiner Entwicklungsfähigkeiten."
+      }
+    },
+    "technologies": {
+      "title": "TECHNOLOGIEN DIE WIR VERWENDEN",
+      "subtitle": "Moderne Werkzeuge für moderne\nLösungen.",
+      "items": {
+        "gsap": "GSAP",
+        "typescript": "Typescript",
+        "vue": "Vue.js",
+        "react": "React",
+        "go": "Golang",
+        "sveltekit": "Sveltekit"
+      }
+    }
+  }
+}

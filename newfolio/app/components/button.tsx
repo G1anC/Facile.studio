@@ -1,4 +1,4 @@
-import {usePathname, useRouter} from "next/navigation";
+import {useParams, usePathname, useRouter} from "next/navigation";
 import { RideauxOut} from "@/app/components/rideaux";
 import React from "react";
 
@@ -30,9 +30,11 @@ export const Button = ({ text, icon, func }: ButtonProps) => {
 };
 
 export const LogoButton = () => {
+    const params = useParams();
     const router = useRouter();
     const pathName = usePathname();
-    const href = "/"
+    const locale = params.locale as string;
+    const href = `/${locale}`;
 
     return (
         <button

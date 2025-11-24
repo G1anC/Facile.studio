@@ -1,0 +1,147 @@
+{
+  "common": {
+    "header": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "aboutUs": "About us",
+      "contactUs": "Contact us"
+    },
+    "footer": {
+      "hireUs": "Hire us",
+      "callUs": "Call us",
+      "buildTogether": "Let's build a website together.",
+      "madeBy": "_ Made by Facile. Studio @ 2025"
+    },
+    "contactModal": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "success": "Message sent!",
+      "error": "Server error. Try again later."
+    }
+  },
+  "home": {
+    "loading": {
+      "line1": "Where exceptional design meets",
+      "line2": "technical excellence"
+    }
+  },
+  "portfolio": {
+    "headers": {
+      "name": "NAME",
+      "type": "TYPE",
+      "time": "TIME (WEEKS)"
+    },
+    "projects": [
+      {
+        "name": "Gian",
+        "description": "Portfolio"
+      },
+      {
+        "name": "Solaïs Intra",
+        "description": "Intra application"
+      },
+      {
+        "name": "Brain.h",
+        "description": "Neural network library"
+      },
+      {
+        "name": "Mont-k",
+        "description": "E-Commerce design concept"
+      },
+      {
+        "name": "Waves",
+        "description": "Music software"
+      },
+      {
+        "name": "Marcel",
+        "description": "WellBeing application"
+      },
+      {
+        "name": "EvelyneCrea",
+        "description": "Artist portfolio"
+      },
+      {
+        "name": "AREA",
+        "description": "Application"
+      }
+    ]
+  },
+  "about": {
+    "title": "ABOUT",
+    "subtitle": "Where exceptional design meets\ntechnical excellence",
+    "mission": {
+      "title": "OUR MISSION",
+      "text": "We are a dedicated team specializing in design, branding, and web development. We create functional, professional websites with a strong emphasis on UI/UX design that captivates and converts.\n\nOur approach combines stunning visual design with robust technical implementation. From brand identity to pixel-perfect interfaces, we craft digital experiences that not only look amazing but perform flawlessly.\n\nWe pride ourselves on our commitment to design excellence, attention to detail, and creating meaningful user experiences. Whether you're building a brand from scratch or need a website that stands out, we bring creativity and professionalism to every project."
+    },
+    "whatSetsUsApart": {
+      "title": "WHAT SETS US\nAPART",
+      "items": [
+        "Ecological Development",
+        "Beautiful & clean code",
+        "Collaborative process",
+        "Design-first approach"
+      ]
+    },
+    "services": {
+      "title": "OUR SERVICES",
+      "subtitle": "Where exceptional design meets\ntechnical excellence",
+      "design": {
+        "title": "DESIGN &\nBRANDING",
+        "description": "Create a compelling brand identity with custom logos, color palettes, typography, and comprehensive brand guidelines that make your business memorable.",
+        "items": [
+          "Logo & Visual Identity",
+          "Brand guidelines",
+          "Marketing materials"
+        ]
+      },
+      "uiux": {
+        "title": "UI/UX &\nDEVELOPMENT",
+        "description": "Design and build stunning, user-centered websites that combine beautiful aesthetics with exceptional functionality and seamless user experiences.",
+        "items": [
+          "Pixel-Perfect Design",
+          "User-Centered UX",
+          "Responsive & Fast"
+        ]
+      },
+      "webapp": {
+        "title": "WEB\nAPPLICATION",
+        "description": "Develop sophisticated web applications with intuitive interfaces, smooth interactions, and powerful functionality that users love to use.",
+        "items": [
+          "Modern Frameworks",
+          "Smooth Animations",
+          "Production Ready"
+        ]
+      }
+    },
+    "team": {
+      "title": "OUR TEAM",
+      "subtitle": "The creative minds behind Facile.",
+      "yann": {
+        "name": "YANN\nTHEVENIN",
+        "role": "Lead Developer & Co-Founder",
+        "description": "Fullstack developer with an AI background, passionate about creating exceptional digital experiences with modern technologies, clean code architecture, and an ecological approach to development."
+      },
+      "noah": {
+        "name": "NOAH\nSTEINIGER",
+        "role": "UI / Web Designer & Co-founder",
+        "description": "Passionate creative UI, web and graphic designer specializing in crafting beautiful, user-centric designs as well as bringing them to life with modern web technologies using his development skills."
+      }
+    },
+    "technologies": {
+      "title": "TECHNOLOGIES WE USE",
+      "subtitle": "Modern tools for modern\nsolutions.",
+      "items": {
+        "gsap": "GSAP",
+        "typescript": "Typescript",
+        "vue": "Vue.js",
+        "react": "React",
+        "go": "Golang",
+        "sveltekit": "Sveltekit"
+      }
+    }
+  }
+}

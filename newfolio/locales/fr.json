@@ -1,0 +1,147 @@
+{
+  "common": {
+    "header": {
+      "home": "Accueil",
+      "portfolio": "Portfolio",
+      "aboutUs": "À propos",
+      "contactUs": "Contactez-nous"
+    },
+    "footer": {
+      "hireUs": "Contactez-nous",
+      "callUs": "Appelez-nous",
+      "buildTogether": "Construisons un site web ensemble.",
+      "madeBy": "_ Créé par Facile. Studio @ 2025"
+    },
+    "contactModal": {
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Message",
+      "send": "Envoyer",
+      "sending": "Envoi...",
+      "success": "Message envoyé !",
+      "error": "Erreur du serveur. Réessayez plus tard."
+    }
+  },
+  "home": {
+    "loading": {
+      "line1": "Où le design exceptionnel rencontre",
+      "line2": "l'excellence technique"
+    }
+  },
+  "portfolio": {
+    "headers": {
+      "name": "NOM",
+      "type": "TYPE",
+      "time": "TEMPS (SEMAINES)"
+    },
+    "projects": [
+      {
+        "name": "Gian",
+        "description": "Portfolio"
+      },
+      {
+        "name": "Solaïs Intra",
+        "description": "Application intranet"
+      },
+      {
+        "name": "Brain.h",
+        "description": "Bibliothèque de réseaux neuronaux"
+      },
+      {
+        "name": "Mont-k",
+        "description": "Concept design e-commerce"
+      },
+      {
+        "name": "Waves",
+        "description": "Logiciel musical"
+      },
+      {
+        "name": "Marcel",
+        "description": "Application bien-être"
+      },
+      {
+        "name": "EvelyneCrea",
+        "description": "Portfolio d'artiste"
+      },
+      {
+        "name": "AREA",
+        "description": "Application"
+      }
+    ]
+  },
+  "about": {
+    "title": "À PROPOS",
+    "subtitle": "Où le design exceptionnel rencontre\nl'excellence technique",
+    "mission": {
+      "title": "NOTRE MISSION",
+      "text": "Nous sommes une équipe dédiée spécialisée dans le design, le branding et le développement web. Nous créons des sites web fonctionnels et professionnels avec un fort accent sur le design UI/UX qui captive et convertit.\n\nNotre approche combine un design visuel époustouflant avec une mise en œuvre technique robuste. De l'identité de marque aux interfaces pixel-perfect, nous créons des expériences digitales qui non seulement sont magnifiques mais fonctionnent parfaitement.\n\nNous accordons une grande importance à l'excellence du design, au souci du détail et à la création d'expériences utilisateurs significatives. Que vous construisiez une marque à partir de zéro ou ayez besoin d'un site web qui se démarque, nous apportons créativité et professionnalisme à chaque projet."
+    },
+    "whatSetsUsApart": {
+      "title": "CE QUI NOUS\nDIFFÉRENTCIE",
+      "items": [
+        "Développement écologique",
+        "Code propre et élégant",
+        "Processus collaboratif",
+        "Approche design-first"
+      ]
+    },
+    "services": {
+      "title": "NOS SERVICES",
+      "subtitle": "Où le design exceptionnel rencontre\nl'excellence technique",
+      "design": {
+        "title": "DESIGN &\nBRANDING",
+        "description": "Créez une identité de marque convaincante avec des logos personnalisés, des palettes de couleurs, une typographie et des directives de marque complètes qui rendent votre entreprise mémorable.",
+        "items": [
+          "Logo & identité visuelle",
+          "Directives de marque",
+          "Supports marketing"
+        ]
+      },
+      "uiux": {
+        "title": "UI/UX &\nDÉVELOPPEMENT",
+        "description": "Concevez et développez des sites web époustouflants, centrés sur l'utilisateur, qui combinent une esthétique magnifique avec une fonctionnalité exceptionnelle et des expériences utilisateur fluides.",
+        "items": [
+          "Design Pixel-Perfect",
+          "UX centrée utilisateur",
+          "Responsive & rapide"
+        ]
+      },
+      "webapp": {
+        "title": "APPLICATION\nWEB",
+        "description": "Développez des applications web sophistiquées avec des interfaces intuitives, des interactions fluides et des fonctionnalités puissantes que les utilisateurs adorent utiliser.",
+        "items": [
+          "Frameworks modernes",
+          "Animations fluides",
+          "Prêt pour la production"
+        ]
+      }
+    },
+    "team": {
+      "title": "NOTRE ÉQUIPE",
+      "subtitle": "Les esprits créatifs derrière Facile.",
+      "yann": {
+        "name": "YANN\nTHEVENIN",
+        "role": "Lead Developer & Co-Fondateur",
+        "description": "Développeur Fullstack avec un background en IA, passionné par la création d'expériences digitales exceptionnelles avec des technologies modernes, une architecture de code propre et une approche écologique du développement."
+      },
+      "noah": {
+        "name": "NOAH\nSTEINIGER",
+        "role": "UI / Web Designer & Co-fondateur",
+        "description": "Designer UI, web et graphique passionné, spécialisé dans la création de designs magnifiques et centrés utilisateur ainsi que leur réalisation avec des technologies web modernes grâce à ses compétences en développement."
+      }
+    },
+    "technologies": {
+      "title": "TECHNOLOGIES QUE NOUS UTILISONS",
+      "subtitle": "Des outils modernes pour des\nsolutions modernes.",
+      "items": {
+        "gsap": "GSAP",
+        "typescript": "Typescript",
+        "vue": "Vue.js",
+        "react": "React",
+        "go": "Golang",
+        "sveltekit": "Sveltekit"
+      }
+    }
+  }
+}

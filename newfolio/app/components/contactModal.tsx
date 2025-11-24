@@ -1,4 +1,7 @@
+'use client'
+
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 type ContactModalProps = {
     open: boolean;
@@ -6,6 +9,7 @@ type ContactModalProps = {
 };
 
 const ContactModal = ({ open, setOpen }: ContactModalProps) => {
+    const t = useTranslations('common.contactModal');
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -13,14 +17,45 @@ const ContactModal = ({ open, setOpen }: ContactModalProps) => {
         message: "",
     });
 
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Form data submitted:", formData);
-        setOpen(false); // close modal after submit
+        setLoading(true);
+        setError("");
+        setSuccess("");
+
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                setError(data.error || t('error'));
+                return;
+            }
+
+            setSuccess(t('success'));
+            setFormData({ name: "", email: "", phone: "", message: "" });
+
+            setTimeout(() => setOpen(false), 800);
+        } catch (err) {
+            setError(t('error'));
+        } finally {
+            setLoading(false);
+        }
     };
 
     if (!open) return null;
@@ -37,15 +72,13 @@ const ContactModal = ({ open, setOpen }: ContactModalProps) => {
 
                 <img
                     alt="Facile"
-                    src="/icons/HIRE US.svg"
+                    src="/icons/HIRE%20US.svg"
                     className="h-20 mx-auto mb-5"
                 />
 
                 <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
                     <div className="relative w-full">
-                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">
-                            Name
-                        </div>
+                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">{t('name')}</div>
                         <input
                             type="text"
                             name="name"
@@ -56,10 +89,9 @@ const ContactModal = ({ open, setOpen }: ContactModalProps) => {
                             required
                         />
                     </div>
+
                     <div className="relative w-full">
-                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">
-                            Email
-                        </div>
+                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">{t('email')}</div>
                         <input
                             type="email"
                             name="email"
@@ -70,10 +102,9 @@ const ContactModal = ({ open, setOpen }: ContactModalProps) => {
                             required
                         />
                     </div>
+
                     <div className="relative w-full">
-                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">
-                            Phone
-                        </div>
+                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">{t('phone')}</div>
                         <input
                             type="tel"
                             name="phone"
@@ -83,13 +114,12 @@ const ContactModal = ({ open, setOpen }: ContactModalProps) => {
                             className="p-4 w-full text-center rounded-full border border-[#1E1E1E]/20 focus:outline-none"
                         />
                     </div>
+
                     <div className="relative w-full">
-                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">
-                            Message
-                        </div>
+                        <div className="absolute bg-[#CAE6D8] px-4 left-5 top-0 -translate-y-1/2">{t('message')}</div>
                         <textarea
                             name="message"
-                            placeholder="Message"
+                            placeholder={t('message')}
                             value={formData.message}
                             onChange={handleChange}
                             className="p-4 w-full text-center rounded-3xl border border-[#1E1E1E]/20 h-48 resize-none focus:outline-none"
@@ -97,11 +127,15 @@ const ContactModal = ({ open, setOpen }: ContactModalProps) => {
                         />
                     </div>
 
+                    {error && <p className="text-red-600 text-center">{error}</p>}
+                    {success && <p className="text-green-700 text-center">{success}</p>}
+
                     <button
                         type="submit"
-                        className="bg-[#1E1E1E] text-[#CAE6D8] py-3 rounded-full hover:bg-[#333] transition"
+                        disabled={loading}
+                        className="bg-[#1E1E1E] text-[#CAE6D8] py-3 rounded-full hover:bg-[#333] transition disabled:opacity-50"
                     >
-                        Send
+                        {loading ? t('sending') : t('send')}
                     </button>
                 </form>
             </div>
