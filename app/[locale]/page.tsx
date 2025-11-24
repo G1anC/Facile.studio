@@ -13,8 +13,8 @@ export default function Home() {
     const [start, setStart] = React.useState(false);
     const [open, setOpen] = React.useState(false);
     const [percent, setPercent] = React.useState(0);
-    const stack = React.useRef<HTMLDivElement>();
-    const background = React.useRef<HTMLDivElement>();
+    const stack = React.useRef<HTMLDivElement>(null);
+    const background = React.useRef<HTMLImageElement>(null);
     const title = React.useRef<HTMLDivElement>(null);
     const tl = gsap.timeline({})
 

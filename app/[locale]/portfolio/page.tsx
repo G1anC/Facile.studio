@@ -34,7 +34,9 @@ export default function Portfolio() {
                             backgroundPosition: "center center",
                             backgroundRepeat: "no-repeat",
                         }}
-                        ref={el => backgroundRef.current[id] = el}
+                        ref={el => {
+                            backgroundRef.current[id] = el;
+                        }}
                         key={id}
                         className="absolute top-0 left-0 opacity-0 w-full h-full object-cover"
                     />
@@ -114,14 +116,14 @@ export default function Portfolio() {
                                 >
                                     <div className="flex-shrink-0">{t(`projects.${id}.name`)}</div>
 
-                                    <div ref={el => bandsRightRef.current[id] = el} className="w-full h-4 px-16 opacity-0">
+                                    <div ref={el => void (bandsRightRef.current[id] = el)} className="w-full h-4 px-16 opacity-0">
                                         <div className="bg-[#CAE6D8] h-4 rounded-full w-full"></div>
                                     </div>
 
                                     <div className="flex items-between flex-shrink-0 justify-between md:w-[300px] xl:w-[600px] w-auto">
                                         <div className="flex-shrink-0 md:inline hidden">{t(`projects.${id}.description`)}</div>
 
-                                        <div ref={el => bandsLeftRef.current[id] = el} className="w-full h-4 px-16 opacity-0">
+                                        <div ref={el => void (bandsLeftRef.current[id] = el)} className="w-full h-4 px-16 opacity-0">
                                             <div className="bg-[#CAE6D8] h-4 rounded-full w-full"></div>
                                         </div>
 
