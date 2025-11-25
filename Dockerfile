@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci
+RUN npm install
 
 # Copy application files
 COPY . .
@@ -20,20 +20,15 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Copy standalone output
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
 
-# Install only production dependencies
-RUN npm ci --omit=dev
-
-# Copy built application from builder stage
-COPY --from=builder /app/.output /app/.output
-
-# Expose the port the app runs on
+# Expose the port
 EXPOSE 3000
 
-# Set environment to production
 ENV NODE_ENV=production
 
 # Start the application
-CMD ["node", ".output/server/index.mjs"]
+CMD ["node", "server.js"]
