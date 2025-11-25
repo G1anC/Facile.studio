@@ -12,6 +12,9 @@ RUN npm install
 # Copy application files
 COPY . .
 
+ARG RESEND_API_KEY
+ENV RESEND_API_KEY=$RESEND_API_KEY
+
 # Build the application
 RUN npm run build
 
