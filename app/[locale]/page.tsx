@@ -68,18 +68,19 @@ export default function Home() {
         };
     }, [start]);
 
-    // Animation infinie sur mobile
+
     React.useEffect(() => {
         if (title.current && window.innerWidth < 1024) {
             gsap.to(title.current, {
                 delay: 3,
-                x: "-230%",
-                duration: 5,
+                x: "-2000%",
+                duration: 133,
                 ease: "none",
                 repeat: -1,
             });
         }
     }, []);
+
 
     return (
         <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight overflow-hidden text-[#1E1E1E] flex flex-col gap-3">
@@ -116,22 +117,31 @@ export default function Home() {
                 <img ref={background}
                      alt="background"
                      src="/Backgrounds/background.png"
-                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                     className="absolute top-1/2 left-1/2 -translate-1/2
                        w-full h-auto min-h-full object-cover scale-150 blur-3xl"
                 />
 
                 <div ref={title} className="absolute -bottom-1 left-0 lg:w-full w-[200%] flex items-start justify-start">
-                    <div className="flex shrink-0 gap-12 xl:w-full">
+                    <div className="flex shrink-0 gap-12 xl:w-full relative">
                         <img
                             alt="Facile"
                             src="/icons/FACILE.svg"
                             className="min-h-[400px] xl:min-h-0 object-cover w-full"
                         />
-                        {window.innerWidth < 1024 && <img
-                            alt="Facile"
-                            src="/icons/FACILE.svg"
-                            className="min-h-[400px] object-cover"
-                        />}
+                        {window.innerWidth >= 1024  ?
+                            <div className={"top-0 right-0 mr-[7%] absolute text-[#CAE6D8] font-extrabold text-5xl"}>
+                                STUDIO
+                            </div>
+                            : Array.from({ length: 20 }).map((_, i) => (
+                                <img
+                                    key={i}
+                                    alt="Facile"
+                                    src="/icons/FACILE.svg"
+                                    className="min-h-[400px] object-cover"
+                                />
+                            ))
+                        }
+
                     </div>
                 </div>
             </div>

@@ -49,12 +49,12 @@ const Header = ({setOpen}: ContactModalProps) => {
                         </button>
 
                         {openLangDropdown && (
-                            <div className="absolute top-full mt-2 bg-[#CAE6D8] rounded-2xl border-2 border-[#1E1E1E]/20 overflow-hidden shadow-lg min-w-[120px]">
+                            <div className="absolute top-full mt-2 bg-[#CAE6D8] rounded-2xl border-2 border-[#1E1E1E]/20 overflow-hidden min-w-[120px]">
                                 {languages.map((lang) => (
                                     <button
                                         key={lang.code}
                                         onClick={() => switchLanguage(lang.code)}
-                                        className={`w-full px-4 py-2 flex gap-2 items-center hover:bg-[#1E1E1E] hover:text-[#CAE6D8] transition-colors ${
+                                        className={`w-full px-4 py-2 flex gap-2 items-center hover:bg-[#1E1E1E]/10 transition-colors ${
                                             lang.code === locale ? 'bg-[#1E1E1E]/10 font-semibold' : ''
                                         }`}
                                     >
