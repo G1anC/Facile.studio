@@ -53,7 +53,7 @@ export default function Portfolio() {
                 <img
                     alt="WORKS"
                     src="/icons/Works.svg"
-                    className="absolute lg:-bottom-10 bottom-0 w-full max-w-[3500px] -left-1 scale-102 z-20"
+                    className="absolute lg:-bottom-10 bottom-0 w-full max-w-[2000px] left-1/2 -translate-x-1/2 scale-102 z-20"
                 />
 
                 <div
@@ -76,7 +76,7 @@ export default function Portfolio() {
                                     rel="noopener noreferrer"
                                     className="flex justify-between items-center flex-shrink-0
                                     cursor-pointer
-                                    hover:font-extrabold hover:uppercase duration-100 transition-all py-4"
+                                    hover:font-extrabold hover:uppercase duration-100 transition-all py-3"
                                     onMouseEnter={() => {
                                         gsap.to([bandsRightRef.current[id], bandsLeftRef.current[id]], {
                                             opacity: 1,
