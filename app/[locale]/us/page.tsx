@@ -55,10 +55,10 @@ export default function AboutPage() {
                     {/* OUR MISSION */}
                     <div className={"flex flex-col md:flex-row gap-8 py-20 items-center justify-between w-full "}>
                         <div className={"flex flex-col items-start justify-start"}>
-                            <h1 className="text-3xl font-extrabold mb-5 text-start">
+                            <h1 className="text-3xl font-extrabold mb-5 px-3 lg:px-0 text-start">
                                 {t('mission.title')}
                             </h1>
-                            <p className="max-w-sm text-justify text-normal">
+                            <p className="max-w-sm text-justify px-3 lg:px-0 text-normal">
                                 {t('mission.text')}
                             </p>
                         </div>
