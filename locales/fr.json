@@ -67,6 +67,14 @@
       {
         "name": "AREA",
         "description": "Application"
+      },
+      {
+        "name": "Black & White",
+        "description": "Compilation de photographies"
+      },
+      {
+        "name": "Retro Festival",
+        "description": "DA complète d'un festival fictif"
       }
     ]
   },
@@ -122,13 +130,23 @@
       "subtitle": "Les esprits créatifs derrière Facile.",
       "yann": {
         "name": "YANN\nTHEVENIN",
-        "role": "Lead Developer & Co-Fondateur",
+        "role": "Developpeur FullStack & Co-Fondateur",
         "description": "Développeur Fullstack avec un background en IA, passionné par la création d'expériences digitales exceptionnelles avec des technologies modernes, une architecture de code propre et une approche écologique du développement."
       },
       "noah": {
         "name": "NOAH\nSTEINIGER",
-        "role": "UI / Web Designer & Co-fondateur",
+        "role": "Designer UI/Web  & Co-fondateur",
         "description": "Designer UI, web et graphique passionné, spécialisé dans la création de designs magnifiques et centrés utilisateur ainsi que leur réalisation avec des technologies web modernes grâce à ses compétences en développement."
+      },
+      "mezz": {
+        "name": "MOHAMED\nMAZOUZ",
+        "role": "Developpeur FullStack",
+        "description": "Développeur Fullstack polyvalent avec une solide expérience sur de multiples projets et stacks différents. Expert en résolution de problèmes, capable de mener à bien n'importe quelle mission, quelle que soit sa complexité."
+      },
+      "cami": {
+        "name": "CAMILLE\nBONNET-CREVEL",
+        "role": "Graphic Designeuse & Photographe",
+        "description": "Designeuse créative au regard affûté, elle met en lumière vos projets comme elle compose ses photos : avec cette capacité unique à déceler le beau en toute chose (mëme là où on ne s'y attend pas)."
       }
     },
     "technologies": {

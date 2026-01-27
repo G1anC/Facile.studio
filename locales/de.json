@@ -129,6 +129,16 @@
         "name": "NOAH\nSTEINIGER",
         "role": "UI / Web Designer & Mitgründer",
         "description": "Leidenschaftlicher kreativer UI-, Web- und Grafikdesigner, spezialisiert auf die Gestaltung schöner, benutzerzentrierter Designs sowie deren Umsetzung mit modernen Webtechnologien unter Verwendung seiner Entwicklungsfähigkeiten."
+      },
+      "mezz": {
+        "name": "MOHAMED\nMAZOUZ",
+        "role": "Web Developer",
+        "description": "Vielseitiger Fullstack-Entwickler mit fundierter Erfahrung in zahlreichen Projekten und unterschiedlichen Stacks. Experte in Problemlösung, fähig jede Aufgabe erfolgreich abzuschließen, unabhängig von ihrer Komplexität."
+      },
+      "cami": {
+        "name": "CAMILLE\nBONNET-CREVEL",
+        "role": "Grafikdesignerin & Fotografin",
+        "description": "Kreative Designerin mit scharfem Blick, sie hebt Ihre Projekte hervor wie sie ihre Fotos komponiert: mit dieser einzigartigen Fähigkeit, Schönheit in allem zu entdecken (selbst dort, wo man es am wenigsten erwartet)."
       }
     },
     "technologies": {

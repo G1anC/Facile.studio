@@ -152,7 +152,7 @@ export default function AboutPage() {
                                     {t('team.yann.role')}
                                 </p>
                             </div>
-                            <p className=" mt-6">
+                            <p className="mt-6">
                                 {t('team.yann.description')}
                             </p>
                             <div className={"flex items-center justify-start gap-6"}>
@@ -168,12 +168,12 @@ export default function AboutPage() {
                         <Box>
                             <div className={""}>
                                 <Image src={"/icons/noah.svg"} alt={"logo"} width={64} height={64} />
-                                <h3 className="text-3xl font-extrabold leading-[110%] text-[#CAE6D8] mt-4">{t('team.noah.name')}</h3>
-                                <p className="text-start mt-4">
+                                <h3 className="text-3xl font-extrabold leading-[110%] text-[#CAE6D8] mt-3">{t('team.noah.name')}</h3>
+                                <p className="text-start mt-3">
                                     {t('team.noah.role')}
                                 </p>
                             </div>
-                            <p className=" mt-6">
+                            <p className="mt-6">
                                 {t('team.noah.description')}
                             </p>
                             <div className={"flex items-center justify-start gap-6 mt-3"}>
@@ -184,6 +184,42 @@ export default function AboutPage() {
                                     <img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
                                 </a>
                                 <a href={"https://www.instagram.com/webbygian"} target="_blank" rel="noopener noreferrer">
+                                    <img src={"/icons/instagramWhite.svg"} alt={"instagram"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
+                                </a>
+                            </div>
+                        </Box>
+
+                        <Box>
+                            <div className={""}>
+                                <Image src={"/icons/mezz.png"} alt={"logo"} width={64} height={64} className="rounded-full border border-white/50" />
+                                <h3 className="text-3xl font-extrabold leading-[110%] text-[#CAE6D8] mt-3">{t('team.mezz.name')}</h3>
+                                <p className="text-start mt-3">
+                                    {t('team.mezz.role')}
+                                </p>
+                            </div>
+                            <p className="mt-6">
+                                {t('team.mezz.description')}
+                            </p>
+                            <div className={"flex items-center justify-start gap-6 mt-3"}>
+                                <a href={"https://www.github.com/MezzLMC"} target="_blank" rel="noopener noreferrer">
+                                    <img src={"/icons/githubWhite.svg"} alt={"github"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
+                                </a>
+                            </div>
+                        </Box>
+
+                        <Box>
+                            <div className={""}>
+                                <Image src={"/icons/cami.png"} alt={"logo"} width={64} height={64} className="rounded-full border border-white/50" />
+                                <h3 className="text-3xl font-extrabold leading-[110%] text-[#CAE6D8] mt-3">{t('team.cami.name')}</h3>
+                                <p className="text-start mt-3">
+                                    {t('team.cami.role')}
+                                </p>
+                            </div>
+                            <p className="mt-6">
+                                {t('team.cami.description')}
+                            </p>
+                            <div className={"flex items-center justify-start gap-6 mt-3"}>
+                                <a href={"https://www.instagram.com/camg_raphic/"} target="_blank" rel="noopener noreferrer">
                                     <img src={"/icons/instagramWhite.svg"} alt={"instagram"} className={"hover:scale-130 duration-200 transition-all"} width={20} height={20} />
                                 </a>
                             </div>

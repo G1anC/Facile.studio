@@ -121,25 +121,33 @@ export default function Portfolio() {
     };
 
     return (
-        <div className="relative bg-[#CAE6D8] p-4 w-screen h-screen tracking-tight text-[#1E1E1E] text-lg flex flex-col gap-3">
+        <div className="relative bg-[#CAE6D8] p-3 xl:p-4  w-screen h-screen tracking-tight text-[#1E1E1E] text-lg flex flex-col gap-3">
             <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-999 bg-[#CAE6D8]"} />
             <Header setOpen={setOpen} />
-            <div className="w-full overflow-hidden h-full relative rounded-[32px]">
-                {data.map((item, id) => (
-                    <div
-                        style={{
-                            backgroundImage: `url(/Backgrounds/${item.name}.png)`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center center",
-                            backgroundRepeat: "no-repeat",
-                        }}
-                        ref={el => {
-                            backgroundRef.current[id] = el;
-                        }}
-                        key={id}
-                        className="absolute top-0 left-0 opacity-0 w-full h-full object-cover"
-                    />
-                ))}
+            <div className="w-full overflow-hidden h-full relative rounded-4xl">
+                {data.map((item, id) => {
+                    if (item.name === "Brain.h")
+                        return <div style={{ backgroundImage: `url(/Backgrounds/${item.name}.webp)`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat", }}
+                                    ref={el => { backgroundRef.current[id] = el; }} key={id}
+                                    className="absolute top-0 left-0 opacity-0 w-full h-full object-cover"
+                        />
+                    
+                    return (
+                        <div
+                            style={{
+                                backgroundImage: `url(/Backgrounds/${item.name}.png)`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center center",
+                                backgroundRepeat: "no-repeat",
+                            }}
+                            ref={el => {
+                                backgroundRef.current[id] = el;
+                            }}
+                            key={id}
+                            className="absolute top-0 left-0 opacity-0 w-full h-full object-cover"
+                        />
+                    )
+                })}
                 <div
                     style={{
                         backgroundImage: 'url("/Backgrounds/blurBackground.png")',
@@ -149,28 +157,27 @@ export default function Portfolio() {
                     }}
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 z-0 -translate-y-1/2 w-full h-auto min-h-full object-cover"
                 />
-                <div ref={title} className="absolute lg:-bottom-10 -bottom-14 left-0 lg:w-full w-[200%] flex items-start justify-start">
+                <div ref={title} className="absolute lg:-bottom-12 z-50 -bottom- left-0 lg:w-full w-[200%] flex items-start justify-start">
                     <div className="flex shrink-0 gap-12 xl:w-full max-w-[2300px] relative">
-                        <img
-                            alt="Facile"
-                            src="/icons/Works.svg"
-                            className="min-h-[400px] xl:min-h-0 object-cover w-full"
-                        />
-                        {!isDesktop && (
+                        {!isDesktop ? (
                             Array.from({ length: 20 }).map((_, i) => (
                                 <img
                                     key={i}
-                                    alt="Facile"
+                                    alt="Works"
                                     src="/icons/Works.svg"
-                                    className="min-h-[400px] object-cover"
+                                    className="max-h-[250px] object-cover"
                                 />
                             ))
-                        )}
+                        ) : <img
+                            alt="Facile"
+                            src="/icons/Works.svg"
+                            className="min-h-[400px] xl:min-h-0 object-cover w-full"
+                        />}
                     </div>
                 </div>
 
                 <div
-                    className="my-auto lg:top-1/3 top-1/4 mt-12 lg:mt-0 -translate-y-1/2 flex flex-col relative w-full md:px-32 px-8 text-[#CAE6D8] lg:gap-16 gap-8 z-50">
+                    className="my-auto lg:top-1/3 lg:-translate-y-1/2 top-0 mt-20 lg:mt-0 flex flex-col relative w-full md:px-32 px-8 text-[#CAE6D8] lg:gap-16 gap-8 z-40">
                     <div className="flex justify-between font-extrabold">
                         {t('headers.name')}
                         <div className="flex items-between justify-between md:w-[200px] xl:w-[600px] w-auto">
@@ -179,7 +186,7 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full z-0 flex-shrink-0">
+                    <div className="flex flex-col w-full z-50 shrink-0">
                         {data.map((item, id) => {
                             return (
                                 <a
@@ -187,9 +194,9 @@ export default function Portfolio() {
                                     key={id}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex justify-between items-center flex-shrink-0
+                                    className="flex justify-between items-center shrink-0
                                     cursor-pointer
-                                    hover:font-extrabold hover:uppercase duration-100 transition-all py-2 xs:py-3"
+                                    hover:font-extrabold hover:uppercase duration-100 transition-all py-2 sm:py-3"
                                     onMouseEnter={() => {
                                         gsap.to([bandsRightRef.current[id], bandsLeftRef.current[id]], {
                                             opacity: 1,
@@ -227,25 +234,28 @@ export default function Portfolio() {
 
                                     }}
                                 >
-                                    <div className="flex-shrink-0">{t(`projects.${id}.name`)}</div>
+                                    <div className="shrink-0">{t(`projects.${id}.name`)}</div>
 
                                     <div ref={el => void (bandsRightRef.current[id] = el)} className="w-full h-4 lg:px-16 px-4 opacity-0">
                                         <div className="bg-[#CAE6D8] h-4 rounded-full w-full"></div>
                                     </div>
 
-                                    <div className="flex items-between flex-shrink-0 justify-between md:w-[300px] xl:w-[600px] w-auto">
-                                        <div className="flex-shrink-0 md:inline hidden">{t(`projects.${id}.description`)}</div>
+                                    <div className="flex items-between shrink-0 justify-between md:w-[300px] xl:w-[600px] w-auto">
+                                        <div className="shrink-0 md:inline hidden">{t(`projects.${id}.description`)}</div>
 
                                         <div ref={el => void (bandsLeftRef.current[id] = el)} className="w-full h-4 lg:px-16 px-4 opacity-0">
                                             <div className="bg-[#CAE6D8] h-4 rounded-full w-full"></div>
                                         </div>
 
-                                        <div className="flex-shrink-0">{item.weeks}</div>
+                                        <div className="shrink-0">{item.weeks}</div>
                                     </div>
                                 </a>
                             )
                         })}
                     </div>
+
+
+
 
                     {/* Mobile Navigation Buttons */}
                     <div className="lg:hidden flex flex-col items-center justify-center gap-8 mt-4">

@@ -19,25 +19,47 @@ export default function Home() {
     const title = React.useRef<HTMLDivElement>(null);
     const tl = gsap.timeline({})
 
+    // Preload assets
     React.useEffect(() => {
-        const timeout = setTimeout(() => {
-            let value = 0;
-            const duration = 1000;
-            const step = 1000 / 60;
-            const increment = 100 / (duration / step);
+        const assetsToLoad = [
+            "/Backgrounds/background.png",
+            "/icons/F..svg",
+            "/icons/FACILE.svg"
+        ];
 
-            const interval = setInterval(() => {
-                value += increment;
-                if (value >= 100) {
-                    value = 100;
-                    clearInterval(interval);
+        let loadedCount = 0;
+        const totalAssets = assetsToLoad.length;
+
+        const updateProgress = () => {
+            loadedCount++;
+            const progressPercent = Math.floor((loadedCount / totalAssets) * 100);
+            setPercent(progressPercent);
+
+            if (loadedCount === totalAssets) {
+                // Small delay after all assets loaded
+                setTimeout(() => {
                     setStart(true);
-                }
-                setPercent(Math.floor(value));
-            }, step);
-        }, 500);
+                }, 300);
+            }
+        };
 
-        return () => clearTimeout(timeout);
+        // Preload images
+        assetsToLoad.forEach((src) => {
+            const img = new Image();
+            img.onload = updateProgress;
+            img.onerror = updateProgress; // Continue even if an asset fails
+            img.src = src;
+        });
+
+        // Fallback: if assets take too long (>5s), start anyway
+        const fallbackTimeout = setTimeout(() => {
+            if (!start) {
+                setPercent(100);
+                setStart(true);
+            }
+        }, 1000);
+
+        return () => clearTimeout(fallbackTimeout);
     }, []);
 
     React.useEffect(() => {
@@ -51,17 +73,17 @@ export default function Home() {
                     duration: 1,
                     ease: "power2.inOut",
                 })
+                .to(stack.current, {
+                    height:0,
+                    duration: 1.5,
+                    ease: "power4.inOut",
+                }, "<")
                 .to(background.current, {
                     delay: 0.2,
                     duration: 3,
                     ease: "power4.inOut",
                     scale: 1,
                     filter: "blur(0px)"
-                }, "<")
-                .to(stack.current, {
-                    height:0,
-                    duration: 1.5,
-                    ease: "power4.inOut",
                 }, "<")
                 .set(stack.current, {
                     display: "none"
@@ -75,9 +97,7 @@ export default function Home() {
             setIsDesktop(window.innerWidth >= 1024);
         };
 
-        // Initialiser la valeur
         handleResize();
-
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -85,7 +105,6 @@ export default function Home() {
     React.useEffect(() => {
         if (title.current) {
             if (!isDesktop) {
-                // Lancer l'animation sur mobile
                 gsap.to(title.current, {
                     delay: 3,
                     x: "-2000%",
@@ -94,13 +113,11 @@ export default function Home() {
                     repeat: -1,
                 });
             } else {
-                // Arrêter et réinitialiser l'animation sur desktop
                 gsap.killTweensOf(title.current);
                 gsap.set(title.current, { x: 0 });
             }
         }
 
-        // Cleanup: tuer l'animation quand le composant se démonte
         return () => {
             if (title.current) {
                 gsap.killTweensOf(title.current);
@@ -109,7 +126,7 @@ export default function Home() {
     }, [isDesktop]);
 
     return (
-        <div className="bg-[#CAE6D8] p-4 w-screen h-screen relative tracking-tight overflow-hidden text-[#1E1E1E] flex flex-col gap-3">
+        <div className="bg-[#CAE6D8] p-3 xl:p-4 w-screen h-screen relative tracking-tight overflow-hidden text-[#1E1E1E] flex flex-col gap-3">
             <Header setOpen={setOpen} />
 
             <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen overflow-hidden h-screen z-999 bg-[#CAE6D8]"} />

@@ -41,7 +41,7 @@
         "description": "Portfolio"
       },
       {
-        "name": "Solaïs Intra",
+        "name": "Solaï  s Intra",
         "description": "Intra application"
       },
       {
@@ -67,6 +67,14 @@
       {
         "name": "AREA",
         "description": "Application"
+      },
+      {
+        "name": "Black & White",
+        "description": "Photography compilation"
+      },
+      {
+        "name": "Retro Festival",
+        "description": "Complete art direction for a fictional festival"
       }
     ]
   },
@@ -129,6 +137,16 @@
         "name": "NOAH\nSTEINIGER",
         "role": "UI / Web Designer & Co-founder",
         "description": "Passionate creative UI, web and graphic designer specializing in crafting beautiful, user-centric designs as well as bringing them to life with modern web technologies using his development skills."
+      },
+      "mezz": {
+        "name": "MOHAMED\nMAZOUZ",
+        "role": "Web Developer",
+        "description": "Versatile Fullstack Developer with solid experience across multiple projects and different stacks. Problem-solving expert, capable of successfully completing any mission, regardless of its complexity."
+      },
+      "cami": {
+        "name": "CAMILLE\nBONNET-CREVEL",
+        "role": "Graphic Designer & Photographer",
+        "description": "Creative designer with a keen eye, she highlights your projects the way she composes her photos: with this unique ability to reveal beauty in everything (even where you least expect it)."
       }
     },
     "technologies": {

@@ -67,6 +67,14 @@
       {
         "name": "AREA",
         "description": "Aplicación"
+      },
+      {
+        "name": "Black & White",
+        "description": "Compilation de photographies"
+      },
+      {
+        "name": "Retro Festival",
+        "description": "DA complète d'un festival fictif"
       }
     ]
   },
@@ -129,6 +137,16 @@
         "name": "NOAH\nSTEINIGER",
         "role": "UI / Web Designer & Co-fundador",
         "description": "Diseñador creativo apasionado de UI, web y gráfico, especializado en crear diseños hermosos y centrados en el usuario, así como darles vida con tecnologías web modernas usando sus habilidades de desarrollo."
+      },
+      "mezz": {
+        "name": "MOHAMED\nMAZOUZ",
+        "role": "Web Developer",
+        "description": "Desarrollador Fullstack versátil con sólida experiencia en múltiples proyectos y stacks diferentes. Experto en resolución de problemas, capaz de llevar a cabo cualquier misión, sin importar su complejidad."
+      },
+      "cami": {
+        "name": "CAMILLE\nBONNET-CREVEL",
+        "role": "Diseñadora Gráfica & Fotógrafa",
+        "description": "Diseñadora creativa con mirada aguda, ilumina tus proyectos como compone sus fotos: con esta capacidad única de descubrir la belleza en todo (incluso donde menos se espera)."
       }
     },
     "technologies": {
