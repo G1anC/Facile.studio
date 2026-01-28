@@ -35,21 +35,21 @@ const Header = ({setOpen}: ContactModalProps) => {
     return (
         <div className={"z-99 absolute w-full top-0"}>
             <div className={"absolute top-0 left-1/2 -translate-x-1/2 z-50 lg:flex hidden items-start"}>
-                <img src={"/icons/Exclude.svg"} alt={""} className={"mt-4"} width={32} height={32} />
+                <img src={"/icons/Exclude.svg"} alt={""} className={"lg:mt-4 md:mt-2 mt-2"} width={32} height={32} />
 
-                <div className={"px-8 py-4 bg-[#CAE6D8] flex items-center gap-6 rounded-b-[32px]"}>
+                <div className={"lg:px-8 px-6 lg:py-4 py-3 bg-[#CAE6D8] flex items-center lg:space-x-6 space-x-4 shrink-0 rounded-b-4xl"}>
                     <LogoButton />
                     {/* Language Selector */}
                     <div className="relative">
                         <button
                             onClick={() => setOpenLangDropdown(!openLangDropdown)}
-                            className="border-2 border-transparent hover:border-[#1E1E1E]/50 rounded-full px-3 py-2 duration-150 transition-colors flex gap-2 items-center cursor-pointer "
+                            className="border-2 border-transparent hover:border-[#1E1E1E]/50 rounded-full lg:px-3 lg:py-2 duration-150 transition-colors flex gap-2 items-center cursor-pointer"
                         >
                             <span>{currentLang.flag}</span>
                         </button>
 
                         {openLangDropdown && (
-                            <div className="absolute top-full mt-2 bg-[#CAE6D8] rounded-2xl border-2 border-[#1E1E1E]/20 overflow-hidden min-w-[120px]">
+                            <div className="absolute top-full mt-2 bg-[#CAE6D8] rounded-2xl border-2 border-[#1E1E1E]/20 overflow-hidden min-w-30">
                                 {languages.map((lang) => (
                                     <button
                                         key={lang.code}
@@ -70,12 +70,12 @@ const Header = ({setOpen}: ContactModalProps) => {
 
                 </div>
 
-                <img src={"/icons/Exclude.svg"} alt={""} className={"scale-x-[-1] mt-4"} width={32} height={32} />
+                <img src={"/icons/Exclude.svg"} alt={""} className={"scale-x-[-1] lg:mt-4 md:mt-2 mt-2"} width={32} height={32} />
             </div>
 
             <div className={"absolute top-0 right-0 flex flex-col items-end justify-end z-50 lg:hidden"}>
-                <div className={"p-6 pr-10 bg-[#CAE6D8] rounded-bl-[32px]"}>
-                    <button className="cursor-pointer" onClick={() => {
+                <div className={"p-6 pr-10 bg-[#CAE6D8] rounded-bl-4xl"}>
+                    <button className="cursor-pointer" onClick={() => {sm:
                         setOpenHeader(true);
                     }}>
                         <img src={"/icons/menu.svg"} alt={"Home logo"} width={20} height={20} />
@@ -84,7 +84,7 @@ const Header = ({setOpen}: ContactModalProps) => {
                 <img src={"/icons/Exclude.svg"} alt={""} className={"mr-2"} width={28} height={28} />
                 {openHeader &&
                     <div className="fixed inset-0 z-50 bg-[#111111]/75 flex items-center justify-center">
-                        <div className="bg-[#CAE6D8] p-16 px-24 rounded-[32px] flex flex-col items-center gap-8 text-[#1e1e1e] relative">
+                        <div className="bg-[#CAE6D8] p-16 px-24 rounded-4xl flex flex-col items-center gap-8 text-[#1e1e1e] relative">
                             <button
                                 onClick={() => setOpenHeader(false)}
                                 className="absolute top-8 left-8 cursor-pointer text-[#1E1E1E]" >
