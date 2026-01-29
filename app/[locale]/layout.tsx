@@ -95,6 +95,7 @@ export default async function RootLayout({
     return (
         <html lang={locale}>
         <head>
+            <script defer data-domain="facile.studio" src="https://analytics.facile.studio/js/script.js"></script>
             <link rel="canonical" href={`https://facilestudio.com/${locale}`} />
         </head>
         <body className={manrope.variable}>
