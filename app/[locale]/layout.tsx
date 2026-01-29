@@ -96,7 +96,7 @@ export default async function RootLayout({
         <html lang={locale}>
         <head>
             <script defer data-domain="facile.studio" src="https://analytics.facile.studio/js/script.js"></script>
-            <link rel="canonical" href={`https://facilestudio.com/${locale}`} />
+            <link rel="canonical" href={`https://facile.studio/${locale}`} />
         </head>
         <body className={manrope.variable}>
         <NextIntlClientProvider messages={messages} locale={locale}>
