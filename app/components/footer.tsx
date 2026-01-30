@@ -27,7 +27,17 @@ const Footer = ({setOpen}: ContactModalProps) => {
                         cursor-pointer
                     "
                 >
-                    <img src={`/icons/phone.svg`} alt={"phone"} width={20} height={20} />
+                    <div 
+                        className="w-6 h-6 bg-[#1E1E1E] group-hover:bg-[#CAE6D8] transition-colors duration-150"
+                        style={{
+                            WebkitMaskImage: `url(/icons/phone.svg)`,
+                            maskImage: `url(/icons/phone.svg)`,
+                            WebkitMaskSize: 'contain',
+                            maskSize: 'contain',
+                            WebkitMaskRepeat: 'no-repeat',
+                            maskRepeat: 'no-repeat'
+                        }}
+                    />
                     <span>{t('footer.callUs')}</span>
                 </a>
                 <img className={"lg:flex hidden xl:text-sm text-xs"} src={"/icons/arrow.svg"} alt="arrow" />

@@ -65,7 +65,7 @@ const Header = ({setOpen}: ContactModalProps) => {
                             </div>
                         )}
                     </div>
-                    <TransitionButton text={t('portfolio')} icon={"folder"} href={`/${locale}/portfolio`} />
+                    <TransitionButton text={t('portfolio')} icon={"projects"} href={`/${locale}/portfolio`} />
                     <TransitionButton text={t('aboutUs')} icon={"us"} href={`/${locale}/us`} />
 
                 </div>
