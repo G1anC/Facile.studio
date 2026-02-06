@@ -274,28 +274,6 @@ export default function Portfolio() {
                     }}
                     className="absolute top-1/2 left-1/2 -translate-1/2 z-0 w-full h-auto min-h-full object-cover"
                 />
-                <div ref={title} className="absolute lg:-bottom-12 z-50 -bottom-6 left-0 lg:w-full w-[200%] flex items-start justify-start">
-                    <div className="flex shrink-0 gap-12 xl:w-full max-w-575 relative">
-                    {!isDesktop ? (
-                        innerHeight > 650 ? (
-                            Array.from({ length: 20 }).map((_, i) => (
-                                <img
-                                    key={i}
-                                    alt="Works"
-                                    src="/icons/Works.svg"
-                                    className="max-h-50 object-cover"
-                                />
-                            ))
-                        ) : null
-                    ) : (
-                        <img
-                            alt="Facile"
-                            src="/icons/Works.svg"
-                            className="min-h-100 xl:min-h-0 object-cover w-full"
-                        />
-                    )}
-                    </div>
-                </div>
 
                 <div
                     className="my-auto lg:top-1/3 lg:-translate-y-1/2 top-0 mt-20 lg:mt-0 flex flex-col relative w-full md:px-32 px-8 text-[#CAE6D8] lg:gap-16 gap-6 z-40">
