@@ -1,3 +1,10 @@
 le portfolio 
 
 enlever le works apres une animation en vrai ou alors juste il sert a rien ca s'enleve
+
+la modal du Hire Us vas trop loin en mobile et necessite un padding minimum
+pareil pour la modal du menu elle est trop grande par rapport a l'ecran
+dans les 2 cas l'overlay qui assombrit le tout derriere la modal n'est pas assez grande sur mobile et ne prends pas toute la page
+
+Il y a du scroll sur toutes les pages en mobile
+
