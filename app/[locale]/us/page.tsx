@@ -26,13 +26,13 @@ export default function AboutPage() {
 
     return (
         <div className="relative bg-[#CAE6D8] p-4 w-screen h-screen overflow-hidden tracking-tight text-[#1E1E1E] flex whitespace-pre-line flex-col gap-3">
-            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-999 bg-[#CAE6D8]"} />
+            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen bg-[#CAE6D8]"} />
             <Header setOpen={setOpen} />
 
             <div
                 style={{
                     backgroundImage: 'url("/Backgrounds/blurBackground.png")',
-                    backgroundSize: "cover",
+                    backgroundSize: "cover", 
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                 }}

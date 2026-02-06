@@ -239,7 +239,7 @@ export default function Portfolio() {
 
     return (
         <div className="relative bg-[#CAE6D8] p-3 xl:p-4  w-screen h-screen overflow-hidden tracking-tight text-[#1E1E1E] text-lg flex flex-col gap-3">
-            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-999 bg-[#CAE6D8]"} />
+            <div className={"rideaux absolute rounded-b-[64px] top-0 left-0 w-screen h-screen z-10 bg-[#CAE6D8]"} />
             <Header setOpen={setOpen} />
             <div className="w-full overflow-hidden h-full relative rounded-4xl">
                 {data.map((item, id) => {
